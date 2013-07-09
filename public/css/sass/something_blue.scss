@@ -1,0 +1,10 @@
+body{ background: url(/images/background.png) }
+div#container{ margin: 0 auto; width: 960px;}
+div#official{ margin: 0 auto; width: 839px; height: 839px; background: url(/images/making_it_official.png) no-repeat;}
+h1, h2, h3, h4, h5 { 
+  text-transform: lowercase;
+	font-family: SimpleRonde-Regular; 
+	font-weight: normal; 
+	font-style: normal; 
+  color: #e4f8ff;
+}
