@@ -1,10 +1,58 @@
-body{ background: url(/images/background.png) }
+body{ margin: 0; padding: 0;
+  color: #37302a;
+  font: 400 112.5%/1.4 "chaparral-pro",Georgia,"times new roman",times,serif;
+}
 div#container{ margin: 0 auto; width: 960px;}
-div#official{ margin: 0 auto; width: 839px; height: 839px; background: url(/images/making_it_official.png) no-repeat;}
+
 h1, h2, h3, h4, h5 { 
   text-transform: lowercase;
 	font-family: SimpleRonde-Regular; 
 	font-weight: normal; 
 	font-style: normal; 
-  color: #e4f8ff;
+  color: #111;
+}
+
+#footer{
+  background: #555;
+  color: #fff;
+  padding: 60px;
+  margin: 0;
+  margin-top: 60px;
+}
+
+.tile{
+  // max-width: 100%;
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0;
+  // border-top: 100px solid #FFF;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  &.lone-tree{ 
+    background: url(/images/LoneTreeBlur-2.jpg) no-repeat center top fixed; 
+  }
+
+  &.sheep{
+    background: url(/images/Sheep.png) no-repeat center top fixed; 
+  }
+  p{
+    text-align: left;
+  }
+
+}
+
+div.info{
+  width: 860px;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: #fff 15px solid;
+  padding: 20px;
+  text-align: center;
+  margin-top: 200px;
+  background: url("/images/blur.png");
 }
