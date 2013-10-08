@@ -163,40 +163,28 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
       var nav = responsiveNav(".nav-collapse", {});
-      window.onpopstate = function(event) {
-        console.log("location: ", document.location, ", state: ", event.state, 'event: ', event);
-      };
+
       // Scroll user to correct place if url has path
       // Won't work for nested routes like /proposal/story
-      var pathname = window.location.pathname.replace(/^\//, '#').split("/")[0]
+      var pathname = window.location.pathname.replace(/^\//, '#').split("/")[0];
       console.log(pathname, window.location.pathname);
       if(pathname.length > 1){
         scroll(pathname);
       }
       function scroll(href){
-          // $('html, body').stop().animate({
-          //     scrollTop: $($anchor.attr('href')).offset().top
-          // }, 1500,'easeInOutExpo');
-
-          // if you don't want to use the easing effects:
-          $('html, body').stop().animate({
-              scrollTop: $(href).offset().top
-          }, 1000);
-
+          $('html, body').stop().animate({ scrollTop: $(href).offset().top }, 1000);
           $('li.active').removeClass('active');
-          $anchor = $("div#nav a[href='"+href+"']")
+          $anchor = $("div#nav a[href='"+href+"']");
           $anchor.parent('li').addClass('active');
       }; 
 
       $('div#nav ul a').bind('click',function(event){
           var $anchor = $(this);
-          scroll($anchor.attr('href')) 
+          scroll($anchor.attr('href'));
 
           var page_name = $anchor[0].innerHTML;
           var path = $anchor.attr('href').replace('#', '');
-          console.log($anchor, page_name, path);
           history.pushState({page_name: page_name, path: path}, page_name, path);
-
           event.preventDefault();
         });
 
@@ -208,24 +196,21 @@
         });
 
         $(window).scroll(function(){
-          var top_of_viewport = $(window).scrollTop()
+          var top_of_viewport = $(window).scrollTop();
           $.each(tiles, function(i,tile){
-            // console.log(top_of_viewport, tile.top, top_of_viewport > tile.top, tile);
             var next_tile = tiles[i+1];
             var last_tile = tiles[tiles.length - 1];
-            if(top_of_viewport > tile.top && (last_tile == tile || top_of_viewport < next_tile.top) ){
-              var $anchor = $("div#nav a[href='"+tile.href+"']")
+            if(top_of_viewport >= tile.top && (last_tile == tile || top_of_viewport < next_tile.top) ){
+              var $anchor = $("div#nav a[href='"+tile.href+"']");
               if (!$anchor.parent('li').hasClass('active')){
                 $('li.active').removeClass('active');
                 $anchor.parent('li').addClass('active');
               }
             }
-            // TODO remove active class when we're above the-coupl3
             if(tile.href == '#the-couple' && top_of_viewport < tile.top){
-                var $anchor = $("div#nav a[href='"+tile.href+"']")
-                $('li.active').removeClass('active');
-              }
-
+              var $anchor = $("div#nav a[href='"+tile.href+"']");
+              $('li.active').removeClass('active');
+            }
           });
         })
 
