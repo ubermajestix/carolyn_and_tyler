@@ -56,7 +56,6 @@ div.info {
 
 /**************************************** Nav ****************************************/
 div#nav {
-  /* background: #C7EEFE; */
   background: url("/images/blur.png"); }
 
 .nav-collapse {
@@ -116,13 +115,19 @@ div#nav {
     color: #37302a;
     border: 0;
     border-bottom: 5px solid transparent;
-    -webkit-transition: background .5s ease;
-    -moz-transition: background .5s ease;
-    -o-transition: background .5s ease;
-    transition: background .5s ease; }
+    -webkit-transition: border-color 0.8s ease-out, color 0.4s ease-out;
+    -moz-transition: border-color 0.8s ease-out, color 0.4s ease-out;
+    -o-transition: border-color 0.8s ease-out, color 0.4s ease-out;
+    transition: border-color 0.8s ease-out, color 0.4s ease-out; }
 
   .nav-collapse a:hover, .nav-collapse a:focus {
-    border-bottom: 5px solid #e59608; } }
+    -webkit-font-smoothing: antialiased;
+    color: #e59608;
+    border-bottom-color: #e59608;
+    -webkit-transition: border-color 0.8s ease-out, color 0.4s ease-out;
+    -moz-transition: border-color 0.8s ease-out, color 0.4s ease-out;
+    -o-transition: border-color 0.8s ease-out, color 0.4s ease-out;
+    transition: border-color 0.8s ease-out, color 0.4s ease-out; } }
 @media screen and (min-width: 46.25em) {
   .nav-collapse .active a {
     -webkit-font-smoothing: subpixel-antialiased;

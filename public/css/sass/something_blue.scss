@@ -72,11 +72,12 @@ div.info{
 }
 
 /**************************************** Nav ****************************************/
+$nav_transition: border-color .8s ease-out, color .4s ease-out;
+
 div#nav{ 
-  /* background: #C7EEFE; */
   background: url("/images/blur.png");
-  
 }
+
 .nav-collapse {
     z-index: 1;
     font-family: "proxima-nova-extra-condensed",sans-serif;
@@ -133,6 +134,7 @@ div#nav{
 .nav-collapse a:focus {
     background: $orange;
     outline: none;
+
 }
 
 @media screen and (min-width:46.25em) {
@@ -146,15 +148,21 @@ div#nav{
         color: #37302a;
         border: 0;
         border-bottom: 5px solid transparent;
-        -webkit-transition: background .5s ease;
-        -moz-transition: background .5s ease;
-        -o-transition: background .5s ease;
-        transition: background .5s ease;
+        -webkit-transition: $nav_transition;
+        -moz-transition: $nav_transition;
+        -o-transition: $nav_transition;
+        transition: $nav_transition;
     }
 
     .nav-collapse a:hover,.nav-collapse a:focus {
-        border-bottom: 5px solid $orange;
-    };
+      -webkit-font-smoothing: antialiased;
+      color: $orange;
+      border-bottom-color: $orange;
+      -webkit-transition: $nav_transition;
+      -moz-transition: $nav_transition;
+      -o-transition: $nav_transition;
+      transition: $nav_transition;
+    }
 }
 
 @media screen and (min-width:46.25em) {

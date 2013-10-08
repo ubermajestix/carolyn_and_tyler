@@ -158,7 +158,7 @@
       </div>
     </div>
     <div id="footer">
-      this is the footer
+      <img src="/images/MadeInLodi.png" alt="" />
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
@@ -170,7 +170,7 @@
       // Won't work for nested routes like /proposal/story
       var pathname = window.location.pathname.replace(/^\//, '#').split("/")[0]
       console.log(pathname, window.location.pathname);
-      if(pathname){
+      if(pathname.length > 1){
         scroll(pathname);
       }
       function scroll(href){
@@ -198,7 +198,37 @@
           history.pushState({page_name: page_name, path: path}, page_name, path);
 
           event.preventDefault();
-      });
+        });
+
+        var tiles = [];
+
+        $('div#nav').find('a').each(function(){
+          var href = $(this).attr('href');
+          tiles.push({href: href, top: $(href).offset().top});
+        });
+
+        $(window).scroll(function(){
+          var top_of_viewport = $(window).scrollTop()
+          $.each(tiles, function(i,tile){
+            // console.log(top_of_viewport, tile.top, top_of_viewport > tile.top, tile);
+            var next_tile = tiles[i+1];
+            var last_tile = tiles[tiles.length - 1];
+            if(top_of_viewport > tile.top && (last_tile == tile || top_of_viewport < next_tile.top) ){
+              var $anchor = $("div#nav a[href='"+tile.href+"']")
+              if (!$anchor.parent('li').hasClass('active')){
+                $('li.active').removeClass('active');
+                $anchor.parent('li').addClass('active');
+              }
+            }
+            // TODO remove active class when we're above the-coupl3
+            if(tile.href == '#the-couple' && top_of_viewport < tile.top){
+                var $anchor = $("div#nav a[href='"+tile.href+"']")
+                $('li.active').removeClass('active');
+              }
+
+          });
+        })
+
     </script>
   </body>
 </html>
