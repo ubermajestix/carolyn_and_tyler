@@ -20,30 +20,42 @@ h1, h2, h3, h4, h5 {
   margin-top: 60px;
 }
 
+a, a:visited{
+  color:#638D4E
+}
+
 .tile{
-  // max-width: 100%;
-  width: 100%;
-  height: auto;
-  min-height: 400px;
+  min-height: 900px;
   margin: 0 auto;
   text-align: center;
   padding: 100px 0;
-  // border-top: 100px solid #FFF;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  &.lone-tree{ 
-    background: url(/images/LoneTreeBlur-2.jpg) no-repeat center top fixed; 
+  border-top: 2px solid #aaa;
+  // background: url(/images/CarolynTylerMissionRanch-3.jpg) no-repeat center top fixed; 
+  &.couple-at-mission-ranch{
+    padding-top: 350px;
+    background: url(/images/CarolynTylerMissionRanch-1850.jpg) no-repeat center top fixed; 
+  }
+  &.dinner{
+    padding-top: 350px;
+    background: url(/images/Dinner-1850.jpg) no-repeat center top fixed; 
+  }
+  &.the-gate{
+    padding-top: 350px;
+    background: url(/images/TheGate-1850.jpg) no-repeat center top fixed; 
+  }
+  &.point-lobos{
+    padding-top: 350px;
+    background: url(/images/PointLobos-1850.jpg) no-repeat center top fixed; 
+  }
+  &.the-pug{
+    padding-top: 350px;
+    background: url(/images/ThePug-1850.jpg) no-repeat center top fixed; 
   }
 
-  &.sheep{
-    background: url(/images/Sheep.png) no-repeat center top fixed; 
-  }
-  p{
+  p, ul{
     text-align: left;
   }
-
+  
 }
 
 div.info{
@@ -56,3 +68,6 @@ div.info{
   margin-top: 200px;
   background: url("/images/blur.png");
 }
+
+
+

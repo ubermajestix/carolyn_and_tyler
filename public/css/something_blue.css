@@ -22,22 +22,31 @@ h1, h2, h3, h4, h5 {
   margin: 0;
   margin-top: 60px; }
 
+a, a:visited {
+  color: #638d4e; }
+
 .tile {
-  width: 100%;
-  height: auto;
-  min-height: 400px;
+  min-height: 900px;
   margin: 0 auto;
   text-align: center;
   padding: 100px 0;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-  .tile.lone-tree {
-    background: url(/images/LoneTreeBlur-2.jpg) no-repeat center top fixed; }
-  .tile.sheep {
-    background: url(/images/Sheep.png) no-repeat center top fixed; }
-  .tile p {
+  border-top: 2px solid #aaa; }
+  .tile.couple-at-mission-ranch {
+    padding-top: 350px;
+    background: url(/images/CarolynTylerMissionRanch-1850.jpg) no-repeat center top fixed; }
+  .tile.dinner {
+    padding-top: 350px;
+    background: url(/images/Dinner-1850.jpg) no-repeat center top fixed; }
+  .tile.the-gate {
+    padding-top: 350px;
+    background: url(/images/TheGate-1850.jpg) no-repeat center top fixed; }
+  .tile.point-lobos {
+    padding-top: 350px;
+    background: url(/images/PointLobos-1850.jpg) no-repeat center top fixed; }
+  .tile.the-pug {
+    padding-top: 350px;
+    background: url(/images/ThePug-1850.jpg) no-repeat center top fixed; }
+  .tile p, .tile ul {
     text-align: left; }
 
 div.info {

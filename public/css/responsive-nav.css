@@ -1,6 +1,7 @@
 /*! responsive-nav.js 1.0.23 by @viljamis */
 div#nav{ 
   background: #C7EEFE;
+  display: none;
 }
 .nav-collapse {
     z-index: 1;
@@ -33,7 +34,7 @@ div#nav{
     display: block;
 }
 
-@media screen and (min-width:46.25em) {
+@media screen and (min-width:46.25em){
     .nav-collapse li {
         float: none;
         display: inline-block;
