@@ -4,7 +4,6 @@
     <title>carolyn &amp; tyler making it official october 2014 carmel, ca</title>
     <link rel="stylesheet" type="text/css" href="/css/something_blue.css">
     <link rel="stylesheet" type="text/css" href="/css/simple_ronde.css">
-    <link rel="stylesheet" href="/css/responsive-nav.css">
     <script src="/js/responsive-nav.js"></script>
   </head>
   <body>
@@ -164,24 +163,42 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
       var nav = responsiveNav(".nav-collapse", {});
-        $(function() {
-      $('div#nav ul a').bind('click',function(event){
-          var $anchor = $(this);
-        
+      window.onpopstate = function(event) {
+        console.log("location: ", document.location, ", state: ", event.state, 'event: ', event);
+      };
+      // Scroll user to correct place if url has path
+      // Won't work for nested routes like /proposal/story
+      var pathname = window.location.pathname.replace(/^\//, '#').split("/")[0]
+      console.log(pathname, window.location.pathname);
+      if(pathname){
+        scroll(pathname);
+      }
+      function scroll(href){
           // $('html, body').stop().animate({
           //     scrollTop: $($anchor.attr('href')).offset().top
           // }, 1500,'easeInOutExpo');
-          
+
           // if you don't want to use the easing effects:
           $('html, body').stop().animate({
-              scrollTop: $($anchor.attr('href')).offset().top
+              scrollTop: $(href).offset().top
           }, 1000);
-          
+
           $('li.active').removeClass('active');
+          $anchor = $("div#nav a[href='"+href+"']")
           $anchor.parent('li').addClass('active');
+      }; 
+
+      $('div#nav ul a').bind('click',function(event){
+          var $anchor = $(this);
+          scroll($anchor.attr('href')) 
+
+          var page_name = $anchor[0].innerHTML;
+          var path = $anchor.attr('href').replace('#', '');
+          console.log($anchor, page_name, path);
+          history.pushState({page_name: page_name, path: path}, page_name, path);
+
           event.preventDefault();
       });
-  });
     </script>
   </body>
 </html>
