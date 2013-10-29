@@ -1,5 +1,6 @@
 $orange: #E59608;
 $green: #638D4E;
+@import 'buttons';
 
 body{ margin: 0; padding: 0;
   color: #37302a;
@@ -23,10 +24,10 @@ h1, h2, h3, h4, h5 {
 }
 
 a, a:visited{
-  color: $green; 
+  color: $orange; 
 }
 
-.tile{
+div.tile{
   min-height: 900px;
   margin: 0 auto;
   text-align: center;
@@ -38,21 +39,27 @@ a, a:visited{
     background: url(/images/CarolynTylerMissionRanch-1850.jpg) no-repeat center top fixed; 
   }
   &.dinner{
-    // padding-top: 350px;
     background: url(/images/Dinner-1850.jpg) no-repeat center top fixed; 
   }
   &.the-gate{
-    // padding-top: 150px;
     background: url(/images/TheGate-1850.jpg) no-repeat center top fixed; 
   }
   &.point-lobos{
-    // padding-top: 350px;
     background: url(/images/PointLobos-1850.jpg) no-repeat center top fixed; 
   }
   &.the-pug{
-    // padding-top: 350px;
     background: url(/images/ThePug-1850.jpg) no-repeat center top fixed; 
   }
+  &.carmel-beach{
+    background: url(/images/CarmelBeach.jpg) no-repeat center top fixed; 
+  }
+  &.dearest-carolyn{
+    background: url(/images/DearestCarolyn-900.jpg) no-repeat center top fixed; 
+  }
+  &.waves{
+    background: url(/images/WavesPointLobos-1850.jpg) no-repeat center top fixed; 
+  }
+
 
   p, ul{
     text-align: left;
@@ -71,6 +78,11 @@ div.info{
   background: url("/images/blur.png");
 }
 
+p.hint{
+  text-align: center;
+  display:none;
+  small{ color: #999;} 
+}
 /**************************************** Nav ****************************************/
 $nav_transition: border-color .8s ease-out, color .4s ease-out;
 
