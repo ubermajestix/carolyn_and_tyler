@@ -17,8 +17,7 @@ h1, h2, h3, h4, h5 {
 }
 
 #footer{
-  background: #555;
-  color: #fff;
+  background: url("/images/blur.png");
   padding: 60px;
   margin: 0;
 }
@@ -59,7 +58,22 @@ div.tile{
   &.waves{
     background: url(/images/WavesPointLobos-1850.jpg) no-repeat center top fixed; 
   }
-
+/******** Enagagement Photos ********/ 
+  &.kph{
+    background: url(/images/point-reyes-kph-1250.jpg) no-repeat center top fixed; 
+  }
+  &.grass{
+    background: url(/images/point-reyes-beach-grass-1250.jpg) no-repeat center top fixed; 
+  }
+  &.cypress{
+    background: url(/images/point-reyes-cypress-1529.jpg) no-repeat center top fixed; 
+  }
+  &.kph-eva{
+    background: url(/images/point-reyes-kph-eva-1418.jpg) no-repeat center top fixed; 
+  }
+  &.great-beach{
+    background: url(/images/point-reyes-great-beach-1289.jpg) no-repeat center top fixed; 
+  }
 
   p, ul{
     text-align: left;
@@ -69,13 +83,15 @@ div.tile{
 
 div.info{
   width: 860px;
-  margin: 0 auto;
+  margin: 200px auto 0 auto;
   border-radius: 8px;
   border: #fff 15px solid;
   padding: 20px;
   text-align: center;
-  margin-top: 200px;
   background: url("/images/blur.png");
+}
+div#the-intro div.info{
+  margin-top:300px;
 }
 
 p.hint{
