@@ -4,15 +4,20 @@ $green: #638D4E;
 
 body{ margin: 0; padding: 0;
   color: #37302a;
-  font: 400 112.5%/1.4 "chaparral-pro",Georgia,"times new roman",times,serif;
+  // font-family: 'Voice Book';
+  font-family: 'Voice Regular';
+  // font-family: 'Voice Medium';
+  font-size: 14pt;
+  line-height: 1.75;
 }
 div#container{ margin: 0 auto; width: 960px;}
 
 h1, h2, h3, h4, h5 { 
   text-transform: lowercase;
-	font-family: SimpleRonde-Regular; 
-	font-weight: normal; 
-	font-style: normal; 
+	// font-family: SimpleRonde-Regular; 
+	// font-weight: normal; 
+	// font-style: normal; 
+  font-family: 'Thirsty Script Light';
   color: #111;
 }
 
@@ -27,11 +32,12 @@ a, a:visited{
 }
 
 div.tile{
-  min-height: 900px;
+  min-height: 1200px;
   margin: 0 auto;
   text-align: center;
   padding: 100px 0;
   border-top: 2px solid #aaa;
+  background-size: cover;
   // background: url(/images/CarolynTylerMissionRanch-3.jpg) no-repeat center top fixed; 
   &.couple-at-mission-ranch{
     padding-top: 350px;
@@ -60,21 +66,25 @@ div.tile{
   }
 /******** Enagagement Photos ********/ 
   &.kph{
-    background: url(/images/point-reyes-kph-1250.jpg) no-repeat center top fixed; 
+    // background: url(/images/point-reyes-kph-1250.jpg) no-repeat center top fixed; 
+    // background: url(/images/kph-hands-1920.jpg) no-repeat center top fixed; 
+    // background: url(/images/kph-hands-1652.jpg) no-repeat center top fixed; 
+    background: url(/images/kph-hands-1652-crop.jpg) no-repeat center top fixed; 
   }
-  &.grass{
-    background: url(/images/point-reyes-beach-grass-1250.jpg) no-repeat center top fixed; 
+  &#the-couple{
+    background: url(/images/how-they-met-tobys.jpg) no-repeat center top fixed; 
   }
-  &.cypress{
-    background: url(/images/point-reyes-cypress-1529.jpg) no-repeat center top fixed; 
+  &#the-proposal{
+    background: url(/images/the-proposal.jpg) no-repeat center top fixed; 
   }
-  &.kph-eva{
-    background: url(/images/point-reyes-kph-eva-1418.jpg) no-repeat center top fixed; 
+  &#the-big-day{
+    // background: url(/images/point-reyes-kph-eva-1418.jpg) no-repeat center top fixed; 
+    background: url(/images/big-day.jpg) no-repeat center top fixed; 
   }
-  &.great-beach{
-    background: url(/images/point-reyes-great-beach-1289.jpg) no-repeat center top fixed; 
+  &#travel{
+    // background: url(/images/subaru.jpg) no-repeat center top fixed; 
+    background: url(/images/travel.jpg) no-repeat center top fixed; 
   }
-
   p, ul{
     text-align: left;
   }
@@ -102,13 +112,21 @@ p.hint{
 /**************************************** Nav ****************************************/
 $nav_transition: border-color .8s ease-out, color .4s ease-out;
 
+li.pug{
+  a{
+  background: url("/images/pug-icon.png") no-repeat;
+  width: 60px;
+  height: 48px;
+}
+}
+
 div#nav{ 
   background: url("/images/blur.png");
 }
 
 .nav-collapse {
+    min-width: 1120px; 
     z-index: 1;
-    font-family: "proxima-nova-extra-condensed",sans-serif;
 }
 
 .nav-collapse,.nav-collapse * {
@@ -143,15 +161,19 @@ div#nav{
         display: inline-block;
         *display: block;
         *float: left;
-        width: auto;
-        margin-left: .4em;
-        margin-right: .2em;
+        width: 165px;
+        margin: 0;
+        &.pug{
+          width: 60px;
+          margin: 0 10px 0 0;
+        }
     };
 }
 
 .nav-collapse a {
-    font-family: SimpleRonde-Regular; 
-    text-transform: lowercase;
+    text-transform: uppercase;
+    font-family: 'Sorren Ex Medium';
+    letter-spacing: 2pt;
     text-decoration: none;
     width: 100%;
     border-bottom: 1px solid white;
@@ -170,8 +192,8 @@ div#nav{
         _float: none;
         -webkit-font-smoothing: antialiased;
         margin: 0;
-        padding: 1.96em .7em .5em;
-        font-size: 1.1em;
+        padding: 55px 0 0 0;
+        font-size: 2.0em;
         background: transparent;
         color: #37302a;
         border: 0;
