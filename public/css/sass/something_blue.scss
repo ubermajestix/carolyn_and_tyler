@@ -1,6 +1,5 @@
 $orange: #E59608;
 $green: #638D4E;
-@import 'buttons';
 
 @mixin clearfix {
   &:before, &:after {
@@ -87,7 +86,6 @@ div#the-intro{
   }
   p{
     margin: 0;
-    font-family: 'Voice Medium';
     font-family: 'Thirsty Script Light';
     text-align: center;
     font-size: 1.5em;
@@ -97,30 +95,37 @@ div#the-intro{
     }
   }
 }
-i.icon-large{
-  margin: 0 5px 0 0;
-  vertical-align: middle;
-}
+
 
 #footer{
   min-width: 960px; 
   background: url("/images/bedge_grunge.png");
   margin: 0;
+  h1, h2, h3{
+    font-family: 'Sorren Ex Medium';
+    letter-spacing: 2pt;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  i.glyphicon{
+    margin: 0 10px 0 0;
+  }
   @include clearfix;
   section{
     h2{ margin: 0; }
     padding: 20px;
     width: 440px;
     float: left;
+    border: 1px solid #bbb;
     &.made-by-the-groom{
-      // float:right;
-      padding-top: 50px;
       img{
         margin: 0 0 0 40px;
       }
     }
   }
   ul{
+    margin: 0;
+    padding: 0;
     list-style: none;
     li{ 
       margin: 10px 0 0 0;
@@ -192,6 +197,7 @@ div.info{
   text-align: center;
   background: url("/images/blur.png");
 }
+
 div#the-intro div.info{
   margin-top:300px;
 }
@@ -205,16 +211,40 @@ div#travel{
   h2{
     border-bottom: 1px solid #aaa;
   }
-  div{
+  div.guide{
+    @include clearfix;
     margin-bottom: 100px;
-  }
-  ul{
-    list-style: none;
-    li{
-      a{
-        color: #444;
-        text-decoration: none;
-        cursor: pointer;
+    h3{
+      color: #eee;
+    }
+    button{
+      // padding: 9px 2px 6px 13px;
+    }
+    ul{
+      list-style: none;
+      li{
+        display: inline-block;
+        font-size: 10pt;
+        background: none;
+        color: #eee;
+        margin: 5px;
+        width: 230px;
+        vertical-align: top;
+        div{
+          border-radius: 4px;
+          padding: 10px;
+          background: #333;
+          color: #aaa;
+          text-decoration: none;
+          cursor: pointer;
+          &:hover{
+            color: #eee;
+            background: #444;
+          }
+          p{
+            height: 200px;
+          }
+        }
       }
     }
   }
