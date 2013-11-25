@@ -105,6 +105,9 @@ div#the-intro p {
 a, a:visited {
   color: #e59608; }
 
+a.btn, a.btn:visited {
+  color: #444; }
+
 div.tile {
   min-height: 1200px;
   margin: 0 auto;
@@ -155,7 +158,51 @@ div#travel div.guide {
   div#travel div.guide:after {
     clear: both; }
   div#travel div.guide h3 {
-    color: #eee; }
+    font-family: 'Sorren Ex Bold';
+    letter-spacing: 2pt;
+    line-height: 1;
+    font-size: 2.2em;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #eee;
+    margin: 0; }
+  div#travel div.guide div.actions {
+    position: absolute;
+    bottom: 5px;
+    width: 215px; }
+    div#travel div.guide div.actions a {
+      width: 93px;
+      margin: 5px;
+      font-size: 11pt; }
+    div#travel div.guide div.actions.more a {
+      width: 126px; }
+  div#travel div.guide div.ribbon-wrap {
+    overflow: hidden;
+    position: absolute;
+    width: 213px;
+    height: 70px;
+    left: 19px;
+    top: -2px; }
+  div#travel div.guide div.ribbon {
+    font-family: "Thirsty Script Light";
+    position: absolute;
+    width: 139px;
+    height: 30px;
+    left: 112px;
+    top: 13px;
+    transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    background: #00b8de;
+    color: #fff;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4); }
+  div#travel div.guide span.glyphicon-phone-alt {
+    margin-right: 10px; }
   div#travel div.guide ul {
     list-style: none; }
     div#travel div.guide ul li {
@@ -166,18 +213,15 @@ div#travel div.guide {
       margin: 5px;
       width: 230px;
       vertical-align: top; }
-      div#travel div.guide ul li div {
+      div#travel div.guide ul li > div {
         border-radius: 4px;
         padding: 10px;
         background: #333;
         color: #aaa;
         text-decoration: none;
-        cursor: pointer; }
-        div#travel div.guide ul li div:hover {
-          color: #eee;
-          background: #444; }
-        div#travel div.guide ul li div p {
-          height: 200px; }
+        cursor: pointer;
+        height: 325px;
+        position: relative; }
 
 /**************************************** Nav ****************************************/
 div#nav {

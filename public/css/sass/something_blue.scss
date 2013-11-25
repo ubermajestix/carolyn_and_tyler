@@ -155,6 +155,10 @@ a, a:visited{
   color: $orange; 
 }
 
+a.btn, a.btn:visited { 
+  color: #444; 
+}
+
 div.tile{
   min-height: 1200px;
   margin: 0 auto;
@@ -215,10 +219,58 @@ div#travel{
     @include clearfix;
     margin-bottom: 100px;
     h3{
+      font-family: 'Sorren Ex Bold';
+      letter-spacing: 2pt;
+      line-height: 1;
+      font-size: 2.2em;
+      font-weight: normal;
+      text-transform: uppercase;
       color: #eee;
+      margin: 0;
     }
-    button{
-      // padding: 9px 2px 6px 13px;
+    div.actions {
+      position: absolute;
+      bottom: 5px;
+      width: 215px;
+      a{
+        // float: right;
+        width: 93px;
+        margin: 5px;
+        font-size: 11pt;
+      }
+      &.more a{
+        width: 126px;
+      }
+    }
+    div.ribbon-wrap{
+      overflow: hidden;
+      position: absolute;
+      width: 213px;
+      height: 70px;
+      left: 19px;
+      top: -2px;
+    }
+    div.ribbon{
+      font-family: "Thirsty Script Light";
+      position: absolute;
+      width: 139px;
+      height: 30px;
+      left: 112px;
+      top: 13px;
+      transform: rotate(35deg);
+      -ms-transform: rotate(35deg);
+      -moz-transform: rotate(35deg);
+      -webkit-transform: rotate(35deg);
+      -o-transform: rotate(35deg);
+      background: #00b8de;
+      color: #fff;
+      font-size: 16px;
+      line-height: 36px;
+      text-align: center;
+      text-shadow: -1px 1px 1px rgba(0,0,0,0.4);
+    }
+    span.glyphicon-phone-alt{
+      margin-right: 10px;
     }
     ul{
       list-style: none;
@@ -230,20 +282,15 @@ div#travel{
         margin: 5px;
         width: 230px;
         vertical-align: top;
-        div{
+        > div{
           border-radius: 4px;
           padding: 10px;
           background: #333;
           color: #aaa;
           text-decoration: none;
           cursor: pointer;
-          &:hover{
-            color: #eee;
-            background: #444;
-          }
-          p{
-            height: 200px;
-          }
+          height: 325px;
+          position: relative;
         }
       }
     }
