@@ -319,7 +319,7 @@ body {
   margin: 0;
   padding: 0;
   color: #37302a;
-  font-family: 'Voice Regular';
+  font-family: 'Voice Medium';
   font-size: 14pt;
   line-height: 1.75; }
 
@@ -328,14 +328,93 @@ div#container {
   width: 960px; }
 
 h1, h2, h3, h4, h5 {
-  text-transform: lowercase;
   font-family: 'Thirsty Script Light';
   color: #111; }
 
+div#the-intro h1 {
+  font-size: 3.0em;
+  margin: 0;
+  letter-spacing: 2pt; }
+  div#the-intro h1 span {
+    letter-spacing: 0;
+    margin: 0 -10px 0 -10px; }
+    div#the-intro h1 span.space {
+      margin: 0 0px 0 20px; }
+  div#the-intro h1.tyler span.y {
+    margin: 0 -15px 0 -5px; }
+  div#the-intro h1.tyler span.l {
+    margin: 0 -5px 0 -10px; }
+  div#the-intro h1.tyler span.n {
+    margin: 0 -13px 0 -10px; }
+  div#the-intro h1.tyler span.t {
+    margin: 0 -5px 0 -10px; }
+  div#the-intro h1.tyler span.r {
+    margin: 0 -15px 0 -10px; }
+  div#the-intro h1.carolyn span.o {
+    margin: 0 -15px 0 -10px; }
+  div#the-intro h1.carolyn span.l {
+    margin: 0 -5px 0 -10px; }
+  div#the-intro h1.carolyn span.n {
+    margin: 0 -13px 0 -10px; }
+  div#the-intro h1.carolyn span.i {
+    margin: 0 -4px 0 -10px; }
+  div#the-intro h1.carolyn span.r {
+    margin: 0 -8px 0 -10px; }
+  div#the-intro h1.carolyn span.s {
+    margin: 0 -14px 0 -10px; }
+  div#the-intro h1.carolyn span.t {
+    margin: 0 -5px 0 -10px; }
+div#the-intro p {
+  margin: 0;
+  font-family: 'Voice Medium';
+  font-family: 'Thirsty Script Light';
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5; }
+  div#the-intro p span {
+    margin: 0 2px; }
+
+i.icon-large {
+  margin: 0 5px 0 0;
+  vertical-align: middle; }
+
 #footer {
-  background: url("/images/blur.png");
-  padding: 60px;
+  min-width: 960px;
+  background: url("/images/bedge_grunge.png");
   margin: 0; }
+  #footer:before, #footer:after {
+    content: "";
+    display: table; }
+  #footer:after {
+    clear: both; }
+  #footer section {
+    padding: 20px;
+    width: 440px;
+    float: left; }
+    #footer section h2 {
+      margin: 0; }
+    #footer section.made-by-the-groom {
+      padding-top: 50px; }
+      #footer section.made-by-the-groom img {
+        margin: 0 0 0 40px; }
+  #footer ul {
+    list-style: none; }
+    #footer ul li {
+      margin: 10px 0 0 0; }
+  #footer div.tiny {
+    clear: both;
+    color: #999;
+    font-size: 10pt;
+    border-top: 1px solid #bbb;
+    padding: 0; }
+    #footer div.tiny a {
+      color: #999; }
+    #footer div.tiny ul {
+      margin: 0; }
+      #footer div.tiny ul li {
+        display: inline-block;
+        float: right;
+        margin: 0 10px 0 0; }
 
 a, a:visited {
   color: #e59608; }
@@ -345,27 +424,9 @@ div.tile {
   margin: 0 auto;
   text-align: center;
   padding: 100px 0;
-  border-top: 2px solid #aaa;
-  background-size: cover;
-  /******** Enagagement Photos ********/ }
-  div.tile.couple-at-mission-ranch {
-    padding-top: 350px;
-    background: url(/images/CarolynTylerMissionRanch-1850.jpg) no-repeat center top fixed; }
-  div.tile.dinner {
-    background: url(/images/Dinner-1850.jpg) no-repeat center top fixed; }
-  div.tile.the-gate {
-    background: url(/images/TheGate-1850.jpg) no-repeat center top fixed; }
-  div.tile.point-lobos {
-    background: url(/images/PointLobos-1850.jpg) no-repeat center top fixed; }
-  div.tile.the-pug {
-    background: url(/images/ThePug-1850.jpg) no-repeat center top fixed; }
-  div.tile.carmel-beach {
-    background: url(/images/CarmelBeach.jpg) no-repeat center top fixed; }
-  div.tile.dearest-carolyn {
-    background: url(/images/DearestCarolyn-900.jpg) no-repeat center top fixed; }
-  div.tile.waves {
-    background: url(/images/WavesPointLobos-1850.jpg) no-repeat center top fixed; }
-  div.tile.kph {
+  border-top: 2px solid #eee;
+  background-size: cover; }
+  div.tile#the-intro {
     background: url(/images/kph-hands-1652-crop.jpg) no-repeat center top fixed; }
   div.tile#the-couple {
     background: url(/images/how-they-met-tobys.jpg) no-repeat center top fixed; }
@@ -375,12 +436,14 @@ div.tile {
     background: url(/images/big-day.jpg) no-repeat center top fixed; }
   div.tile#travel {
     background: url(/images/travel.jpg) no-repeat center top fixed; }
+  div.tile#the-registry {
+    background: url(/images/ThePug-1850.jpg) no-repeat center top fixed; }
   div.tile p, div.tile ul {
     text-align: left; }
 
 div.info {
   width: 860px;
-  margin: 200px auto 0 auto;
+  margin: 200px auto 800px auto;
   border-radius: 8px;
   border: #fff 15px solid;
   padding: 20px;
@@ -396,17 +459,23 @@ p.hint {
   p.hint small {
     color: #999; }
 
-/**************************************** Nav ****************************************/
-li.pug a {
-  background: url("/images/pug-icon.png") no-repeat;
-  width: 60px;
-  height: 48px; }
+div#travel h2 {
+  border-bottom: 1px solid #aaa; }
+div#travel div {
+  margin-bottom: 100px; }
+div#travel ul {
+  list-style: none; }
+  div#travel ul li a {
+    color: #444;
+    text-decoration: none;
+    cursor: pointer; }
 
+/**************************************** Nav ****************************************/
 div#nav {
   background: url("/images/blur.png"); }
 
 .nav-collapse {
-  min-width: 1120px;
+  min-width: 960px;
   z-index: 1; }
 
 .nav-collapse, .nav-collapse * {
@@ -435,19 +504,25 @@ div#nav {
     display: inline-block;
     *display: block;
     *float: left;
-    width: 165px;
-    margin: 0; }
+    width: 178px;
+    margin: 0;
+    padding: 0;
+    padding-top: 22px; }
     .nav-collapse li.pug {
       width: 60px;
-      margin: 0 10px 0 0; } }
+      margin-right: 35px; }
+      .nav-collapse li.pug a {
+        background: url("/images/pug-icon.png") no-repeat;
+        width: 60px;
+        height: 73px; } }
 .nav-collapse a {
   text-transform: uppercase;
   font-family: 'Sorren Ex Medium';
-  letter-spacing: 2pt;
+  letter-spacing: 3pt;
   text-decoration: none;
   width: 100%;
   border-bottom: 1px solid white;
-  padding: .5em 1em;
+  padding: 0;
   float: left; }
 
 .nav-collapse a:focus {
@@ -459,8 +534,7 @@ div#nav {
     _float: none;
     -webkit-font-smoothing: antialiased;
     margin: 0;
-    padding: 55px 0 0 0;
-    font-size: 2.0em;
+    font-size: 2.4em;
     background: transparent;
     color: #37302a;
     border: 0;

@@ -2,29 +2,148 @@ $orange: #E59608;
 $green: #638D4E;
 @import 'buttons';
 
+@mixin clearfix {
+  &:before, &:after {
+    content:"";
+    display:table;
+  }
+  &:after {
+    clear:both;
+  }
+}
 body{ margin: 0; padding: 0;
   color: #37302a;
   // font-family: 'Voice Book';
-  font-family: 'Voice Regular';
-  // font-family: 'Voice Medium';
+  // font-family: 'Voice Regular';
+  font-family: 'Voice Medium';
   font-size: 14pt;
   line-height: 1.75;
 }
 div#container{ margin: 0 auto; width: 960px;}
 
 h1, h2, h3, h4, h5 { 
-  text-transform: lowercase;
 	// font-family: SimpleRonde-Regular; 
 	// font-weight: normal; 
 	// font-style: normal; 
   font-family: 'Thirsty Script Light';
   color: #111;
 }
+div#the-intro{
+  h1{ 
+    font-size: 3.0em;
+    margin: 0;
+    letter-spacing: 2pt;
+    span{
+      letter-spacing: 0;
+      margin:0 -10px 0 -10px;
+      &.space{
+        margin:0 0px 0 20px;
+      }
+    }
+    &.tyler{
+      span{
+        &.y{
+          margin:0 -15px 0 -5px;
+        }
+        &.l{
+          margin:0 -5px 0 -10px;
+        }
+        &.n{
+          margin:0 -13px 0 -10px;
+        }
+        &.t{
+          margin:0 -5px 0 -10px;
+        }
+        &.r{
+          margin:0 -15px 0 -10px;
+        }
+      }
+    }
+    &.carolyn{
+      span{
+        &.o{
+          margin:0 -15px 0 -10px;
+        }
+        &.l{
+          margin:0 -5px 0 -10px;
+        }
+        &.n{
+          margin:0 -13px 0 -10px;
+        }
+        &.i{
+          margin:0 -4px 0 -10px;
+        }
+        &.r{
+          margin:0 -8px 0 -10px;
+        }
+        &.s{
+          margin:0 -14px 0 -10px;
+        }
+        &.t{
+          margin:0 -5px 0 -10px;
+        }
+      }
+    }
+  }
+  p{
+    margin: 0;
+    font-family: 'Voice Medium';
+    font-family: 'Thirsty Script Light';
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.5;
+    span{
+      margin:0 2px;
+    }
+  }
+}
+i.icon-large{
+  margin: 0 5px 0 0;
+  vertical-align: middle;
+}
 
 #footer{
-  background: url("/images/blur.png");
-  padding: 60px;
+  min-width: 960px; 
+  background: url("/images/bedge_grunge.png");
   margin: 0;
+  @include clearfix;
+  section{
+    h2{ margin: 0; }
+    padding: 20px;
+    width: 440px;
+    float: left;
+    &.made-by-the-groom{
+      // float:right;
+      padding-top: 50px;
+      img{
+        margin: 0 0 0 40px;
+      }
+    }
+  }
+  ul{
+    list-style: none;
+    li{ 
+      margin: 10px 0 0 0;
+    }
+  }
+  div.tiny{
+    clear:both;
+    color: #999;
+    font-size: 10pt;
+    border-top: 1px solid #bbb;
+    padding: 0;
+    a{
+      color: #999;
+    }
+    ul{
+      margin: 0;
+      li{
+        display: inline-block;
+        float: right;
+        margin: 0 10px 0 0;
+      }
+    }
+  }
 }
 
 a, a:visited{
@@ -36,39 +155,9 @@ div.tile{
   margin: 0 auto;
   text-align: center;
   padding: 100px 0;
-  border-top: 2px solid #aaa;
+  border-top: 2px solid #eee;
   background-size: cover;
-  // background: url(/images/CarolynTylerMissionRanch-3.jpg) no-repeat center top fixed; 
-  &.couple-at-mission-ranch{
-    padding-top: 350px;
-    background: url(/images/CarolynTylerMissionRanch-1850.jpg) no-repeat center top fixed; 
-  }
-  &.dinner{
-    background: url(/images/Dinner-1850.jpg) no-repeat center top fixed; 
-  }
-  &.the-gate{
-    background: url(/images/TheGate-1850.jpg) no-repeat center top fixed; 
-  }
-  &.point-lobos{
-    background: url(/images/PointLobos-1850.jpg) no-repeat center top fixed; 
-  }
-  &.the-pug{
-    background: url(/images/ThePug-1850.jpg) no-repeat center top fixed; 
-  }
-  &.carmel-beach{
-    background: url(/images/CarmelBeach.jpg) no-repeat center top fixed; 
-  }
-  &.dearest-carolyn{
-    background: url(/images/DearestCarolyn-900.jpg) no-repeat center top fixed; 
-  }
-  &.waves{
-    background: url(/images/WavesPointLobos-1850.jpg) no-repeat center top fixed; 
-  }
-/******** Enagagement Photos ********/ 
-  &.kph{
-    // background: url(/images/point-reyes-kph-1250.jpg) no-repeat center top fixed; 
-    // background: url(/images/kph-hands-1920.jpg) no-repeat center top fixed; 
-    // background: url(/images/kph-hands-1652.jpg) no-repeat center top fixed; 
+  &#the-intro{
     background: url(/images/kph-hands-1652-crop.jpg) no-repeat center top fixed; 
   }
   &#the-couple{
@@ -85,6 +174,9 @@ div.tile{
     // background: url(/images/subaru.jpg) no-repeat center top fixed; 
     background: url(/images/travel.jpg) no-repeat center top fixed; 
   }
+  &#the-registry{
+    background: url(/images/ThePug-1850.jpg) no-repeat center top fixed; 
+  }
   p, ul{
     text-align: left;
   }
@@ -93,7 +185,7 @@ div.tile{
 
 div.info{
   width: 860px;
-  margin: 200px auto 0 auto;
+  margin: 200px auto 800px auto;
   border-radius: 8px;
   border: #fff 15px solid;
   padding: 20px;
@@ -109,23 +201,35 @@ p.hint{
   display:none;
   small{ color: #999;} 
 }
+div#travel{
+  h2{
+    border-bottom: 1px solid #aaa;
+  }
+  div{
+    margin-bottom: 100px;
+  }
+  ul{
+    list-style: none;
+    li{
+      a{
+        color: #444;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
 /**************************************** Nav ****************************************/
 $nav_transition: border-color .8s ease-out, color .4s ease-out;
 
-li.pug{
-  a{
-  background: url("/images/pug-icon.png") no-repeat;
-  width: 60px;
-  height: 48px;
-}
-}
+
 
 div#nav{ 
   background: url("/images/blur.png");
 }
 
 .nav-collapse {
-    min-width: 1120px; 
+    min-width: 960px; 
     z-index: 1;
 }
 
@@ -161,11 +265,18 @@ div#nav{
         display: inline-block;
         *display: block;
         *float: left;
-        width: 165px;
+        width: 178px;
         margin: 0;
+        padding: 0;
+        padding-top: 22px;
         &.pug{
           width: 60px;
-          margin: 0 10px 0 0;
+          margin-right: 35px;
+          a{
+            background: url("/images/pug-icon.png") no-repeat;
+            width: 60px;
+            height: 73px;
+          }
         }
     };
 }
@@ -173,11 +284,11 @@ div#nav{
 .nav-collapse a {
     text-transform: uppercase;
     font-family: 'Sorren Ex Medium';
-    letter-spacing: 2pt;
+    letter-spacing: 3pt;
     text-decoration: none;
     width: 100%;
     border-bottom: 1px solid white;
-    padding: .5em 1em;
+    padding: 0;
     float: left;
 }
 
@@ -192,8 +303,7 @@ div#nav{
         _float: none;
         -webkit-font-smoothing: antialiased;
         margin: 0;
-        padding: 55px 0 0 0;
-        font-size: 2.0em;
+        font-size: 2.4em;
         background: transparent;
         color: #37302a;
         border: 0;
