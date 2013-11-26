@@ -21,29 +21,31 @@ div#the-intro h1 {
   letter-spacing: 2pt; }
   div#the-intro h1 span {
     letter-spacing: 0;
-    margin: 0 -10px 0 -10px; }
+    margin: 0 -9px 0 -10px; }
     div#the-intro h1 span.space {
       margin: 0 0px 0 20px; }
   div#the-intro h1.tyler span.y {
-    margin: 0 -15px 0 -5px; }
+    margin: 0 -13px 0 -5px; }
   div#the-intro h1.tyler span.l {
     margin: 0 -5px 0 -10px; }
+  div#the-intro h1.tyler span.o {
+    margin: 0 -6px 0 -10px; }
   div#the-intro h1.tyler span.n {
     margin: 0 -13px 0 -10px; }
   div#the-intro h1.tyler span.t {
-    margin: 0 -5px 0 -10px; }
+    margin: 0 -4px 0 -10px; }
   div#the-intro h1.tyler span.r {
-    margin: 0 -15px 0 -10px; }
+    margin: 0 -11px 0 -8px; }
   div#the-intro h1.carolyn span.o {
-    margin: 0 -15px 0 -10px; }
+    margin: 0 -13px 0 -10px; }
   div#the-intro h1.carolyn span.l {
-    margin: 0 -5px 0 -10px; }
+    margin: 0 -3px 0 -10px; }
   div#the-intro h1.carolyn span.n {
     margin: 0 -13px 0 -10px; }
   div#the-intro h1.carolyn span.i {
     margin: 0 -4px 0 -10px; }
   div#the-intro h1.carolyn span.r {
-    margin: 0 -8px 0 -10px; }
+    margin: 0 -6px 0 -8px; }
   div#the-intro h1.carolyn span.s {
     margin: 0 -14px 0 -10px; }
   div#the-intro h1.carolyn span.t {
@@ -57,6 +59,14 @@ div#the-intro p {
   line-height: 1.5; }
   div#the-intro p span {
     margin: 0 2px; }
+  div#the-intro p span.thirsty-push {
+    margin: 0 2px 0 0; }
+  div#the-intro p span.thirsty-push-3 {
+    margin: 0 3px 0 0; }
+  div#the-intro p span.thirsty-push-4 {
+    margin: 0 4px 0 0; }
+  div#the-intro p span.thirsty-pull {
+    margin: 0 -3px 0 0; }
 
 span.thirsty-push {
   margin: 0 2px 0 0; }

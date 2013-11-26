@@ -44,7 +44,7 @@ div#the-intro{
     letter-spacing: 2pt;
     span{
       letter-spacing: 0;
-      margin:0 -10px 0 -10px;
+      margin:0 -9px 0 -10px;
       &.space{
         margin:0 0px 0 20px;
       }
@@ -52,29 +52,32 @@ div#the-intro{
     &.tyler{
       span{
         &.y{
-          margin:0 -15px 0 -5px;
+          margin:0 -13px 0 -5px;
         }
         &.l{
           margin:0 -5px 0 -10px;
+        }
+        &.o{
+          margin:0 -6px 0 -10px;
         }
         &.n{
           margin:0 -13px 0 -10px;
         }
         &.t{
-          margin:0 -5px 0 -10px;
+          margin:0 -4px 0 -10px;
         }
         &.r{
-          margin:0 -15px 0 -10px;
+          margin:0 -11px 0 -8px;
         }
       }
     }
     &.carolyn{
       span{
         &.o{
-          margin:0 -15px 0 -10px;
+          margin:0 -13px 0 -10px;
         }
         &.l{
-          margin:0 -5px 0 -10px;
+          margin:0 -3px 0 -10px;
         }
         &.n{
           margin:0 -13px 0 -10px;
@@ -83,7 +86,7 @@ div#the-intro{
           margin:0 -4px 0 -10px;
         }
         &.r{
-          margin:0 -8px 0 -10px;
+          margin: 0 -6px 0 -8px;
         }
         &.s{
           margin:0 -14px 0 -10px;
@@ -102,6 +105,18 @@ div#the-intro{
     line-height: 1.5;
     span{
       margin:0 2px;
+    }
+    span.thirsty-push{
+      margin:0 2px 0 0;
+    }
+    span.thirsty-push-3{
+      margin:0 3px 0 0;
+    }
+    span.thirsty-push-4{
+      margin:0 4px 0 0;
+    }
+    span.thirsty-pull{
+      margin:0 -3px 0 0;
     }
   }
 }
