@@ -1,5 +1,6 @@
 $orange: #E59608;
 $green: #638D4E;
+$black: #333;
 
 @mixin clearfix {
   &:before, &:after {
@@ -176,22 +177,25 @@ div.tile{
     background: url(/images/the-proposal.jpg) no-repeat center top fixed; 
   }
   &#the-big-day{
-    // background: url(/images/point-reyes-kph-eva-1418.jpg) no-repeat center top fixed; 
     background: url(/images/big-day.jpg) no-repeat center top fixed; 
   }
   &#travel{
-    // background: url(/images/subaru.jpg) no-repeat center top fixed; 
     background: url(/images/travel.jpg) no-repeat center top fixed; 
   }
   &#the-registry{
     background: url(/images/ThePug-1850.jpg) no-repeat center top fixed; 
+  }
+  &#gallery{
+    background: $black;
+    h1{
+      color: #eee;
+    }
   }
   p, ul{
     text-align: left;
   }
   
 }
-
 div.info{
   width: 860px;
   margin: 200px auto 800px auto;
@@ -201,6 +205,8 @@ div.info{
   text-align: center;
   background: url("/images/blur.png");
 }
+
+
 
 div#the-intro div.info{
   margin-top:300px;
@@ -213,11 +219,15 @@ p.hint{
 }
 div#travel{
   h2{
+    font-size: 1.6em; 
     border-bottom: 1px solid #aaa;
   }
   div.guide{
     @include clearfix;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
+    a.btn{
+      font-family: 'Thirsty Script Light';
+    }
     h3{
       font-family: 'Sorren Ex Bold';
       letter-spacing: 2pt;
@@ -232,11 +242,15 @@ div#travel{
       position: absolute;
       bottom: 5px;
       width: 215px;
+      margin: 0;
       a{
-        // float: right;
-        width: 93px;
-        margin: 5px;
-        font-size: 11pt;
+        width: 100px;
+        margin: 5px 5px 5px 0;
+        font-size: 12pt;
+      }
+      span{
+        margin-top: -4px;
+        vertical-align: middle ;
       }
       &.more a{
         width: 126px;
@@ -302,11 +316,22 @@ div#travel{
         > div{
           border-radius: 4px;
           padding: 10px;
-          background: #333;
-          color: #aaa;
+          background: $black;
+          color: #ddd;
           text-decoration: none;
           height: 325px;
           position: relative;
+        }
+      }
+    }
+    &.getting-there{
+      ul li{
+        width: 345px;
+        > div{
+          // background:#244997;
+          // color: #eee;
+          height: 535px;
+          font-size: 11pt;
         }
       }
     }
@@ -487,4 +512,157 @@ div#nav{
     .nav-toggle {
         display: none;
     };
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+  h1, h2, h3, h4, h5 { 
+    font-family: 'Thirsty Script Light';
+    color: white;
+  }
+  div.info{
+    border: none;
+    border-radius: 0px;
+    font-size: 2.0em;
+    background: black;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+  }
+  div.tile{
+    padding: 0;
+    margin:0 auto;
+    min-height: 0;
+    &#the-intro{
+      background: url(/images/kph-hands-1652-crop.jpg) no-repeat center top; 
+      min-height: 1000px;
+      h1{
+        color: black;
+      }
+      div.info{
+        font-size: 1.0em;
+        background: white;
+        color: black;
+        background: url("/images/blur.png");
+      }
+    }
+    &#the-couple{
+      background: none;
+    }
+    &#the-proposal{
+      background: none;
+    }
+    &#the-big-day{
+      background: none;
+    }
+    &#travel{
+      background: none;
+    }
+    &#the-registry{
+      background: none;
+    }
+  }
+  div#travel{
+    h2{
+      border-bottom: 1px solid #aaa;
+    }
+    div.guide{
+      @include clearfix;
+      margin-bottom: 100px;
+      div.actions {
+        position: absolute;
+        bottom: 5px;
+        width: 215px;
+        a{
+          width: 178px;
+          height: 65px;
+          margin: 5px;
+          font-size: 24pt;
+          span{
+            margin-top: -4px;
+            vertical-align: middle ;
+          }
+        }
+        &.more a{
+          width: 248px;
+          span{
+            margin-top: -8px;
+            vertical-align: middle ;
+          }
+        }
+      }
+      div.ribbon-wrap{
+        // overflow: hidden;
+        position: absolute;
+        width: 415px;
+        height: 152px;
+        left: 20px;
+        top: -4px;
+        // background: red;
+      }
+      div.ribbon{
+        font-family: "Thirsty Script Light";
+        position: absolute;
+        width: 270px;
+        height: 50px;
+        left: 185px;
+        top: 30px;
+        transform: rotate(35deg);
+        -ms-transform: rotate(35deg);
+        -moz-transform: rotate(35deg);
+        -webkit-transform: rotate(35deg);
+        -o-transform: rotate(35deg);
+        background: #00b8de;
+        color: #fff;
+        // font-size: 2.0em;
+        padding: 10px 0 0 0;
+        font-size: 24pt;
+        line-height: 34px;
+        text-align: center;
+        text-shadow: -1px 1px 1px rgba(0,0,0,0.4);
+        &:before{
+          content: "";
+          position: absolute;
+          bottom: -4px;
+          left: -1px;
+          border: 2px solid;
+          border-color: #508395 transparent transparent transparent;
+        }
+        &:after{
+          content: "";
+          position: absolute;
+          bottom: -6px;
+          left: 114px;
+          border: 3px solid;
+          border-color: #508395 transparent transparent transparent;
+        }
+
+      }
+      span.glyphicon-phone-alt{
+        margin-right: 10px;
+      }
+      ul{
+        list-style: none;
+        li{
+          display: inline-block;
+          background: none;
+          color: #eee;
+          margin: 5px;
+          width: 430px;
+          vertical-align: top;
+          > div{
+            font-size: 2.0em;
+            border-radius: 4px;
+            padding: 10px;
+            background: #333;
+            color: #aaa;
+            text-decoration: none;
+            height: 825px;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
 }

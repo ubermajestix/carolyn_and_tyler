@@ -7,6 +7,7 @@ We're getting married! This is our website about getting married!
   - http://www.myfonts.com/fonts/hubertjocham/voice/
   - http://www.myfonts.com/fonts/yellow-design/thirsty-script
 - Finalize travel guide
+  - Edit Getting There.
 - Toggle proposal story length
 - Build gallery of engagement and other images. Use watermarked
   engagement photos.
