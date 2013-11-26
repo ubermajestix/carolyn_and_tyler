@@ -6,12 +6,11 @@ We're getting married! This is our website about getting married!
   - http://www.myfonts.com/fonts/reserves/sorren-ex/
   - http://www.myfonts.com/fonts/hubertjocham/voice/
   - http://www.myfonts.com/fonts/yellow-design/thirsty-script
-- Build travel guide to Carmel, maybe flip through "pages" 
+- Finalize travel guide
+- Toggle proposal story length
 - Build gallery of engagement and other images. Use watermarked
   engagement photos.
 - Footer
-  - Add links to vendors.
-  - Add "made by the groom" message
   - Open source it?
-
+- Make mobile version
 

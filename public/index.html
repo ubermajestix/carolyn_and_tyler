@@ -21,7 +21,7 @@
         <li><a href="#the-proposal" class="tile">Proposal</a></li>
         <li><a href="#the-big-day" class="tile">Big Day</a></li>
         <li class="pug"><a href="#the-intro"></a></li>
-        <li><a href="#travel" class="tile">Travel Guide</a></li>
+        <li><a href="#travel" class="tile">Travel</a></li>
         <li><a href="#the-registry" class="tile">Registry</a></li>
         <li><a href="/gallery">Gallery</a></li>
       </ul>
@@ -207,6 +207,11 @@
                 <a type="button" class="btn btn-default btn-lg" href="http:// www.cypress-inn.com">
                   website <span class="glyphicon glyphicon-chevron-right"></span>
                 </a>
+              </div>
+              <div class="ribbon-wrap">
+                <div class="ribbon">
+                  our fav!
+                </div>
               </div>
             </div>
             </li>
@@ -739,7 +744,7 @@
         });
 
 
-        var intro_bottom = $('div#the-couple').offset().top;
+        var intro_bottom = $('div#the-couple').offset().top + 50;
         var small_nav = false;
         var nav_offset = 200;
         $(window).scroll(function(){
@@ -747,19 +752,28 @@
             var top_of_viewport = $(window).scrollTop();
             // Shrink Nav
             if(small_nav === false && top_of_viewport >= intro_bottom){
-              console.log('past the intro');
-              $('div#nav li').animate({'font-size': '0.60em', 'padding-top': '-=18'});
-              $('div#nav li:not(.pug)').animate({width: '125px'});
-              $('div#nav li.pug a').animate({height: '60px'});
               small_nav = true;
+              console.log('past the intro');
+              setTimeout(function() {
+                $('div#nav li, div#nav ul, div#li a').stop(true, true)
+                $('div#nav ul').animate({'padding-top': '10px'});
+                $('div#nav li.pug a').animate({height: '60px'});
+                $('div#nav li a').animate({'font-size': '1.4em'});
+                $('div#nav li:not(.pug)').animate({width: '125px'},900);
+              }, 800);
             }
+            // Unshrink Nav
             if(small_nav == true && top_of_viewport <= intro_bottom){
-              console.log('in the intro');
-              $('div#nav li').animate({'font-size': '1.0em','padding-top': '+=18'});
-              $('div#nav li:not(.pug)').animate({width: '178px'});
-              $('div#nav li.pug a').animate({height: '73px'});
               small_nav = false;
+              animating = true;
+              console.log('in the intro');
+              $('div#nav li, div#nav ul, div#li a').stop(true, true)
+              $('div#nav li:not(.pug)').animate({width: '161px'});
+              $('div#nav li a').animate({'font-size': '2.4em'},900);
+              $('div#nav li.pug a').animate({height: '73px'});
+              $('div#nav ul').animate({'padding-top': '22px'});
             }
+            // This figures out where we are on the page and changes the nav highlight as the user scrolls
             $.each(tiles, function(i,tile){
               var next_tile = tiles[i+1];
               var last_tile = tiles[tiles.length - 1];
