@@ -186,6 +186,10 @@ div.tile{
     background: url(/images/big-day.jpg) no-repeat center top fixed; 
   }
   &#travel{
+    // background: url(/images/WavesPointLobos-1850.jpg) no-repeat center top fixed; 
+    background: url(/images/eva-beach.jpg) no-repeat center top fixed; 
+  }
+  &#guide{
     background: url(/images/travel.jpg) no-repeat center top fixed; 
   }
   &#the-registry{
@@ -231,11 +235,12 @@ div#the-proposal{
     }
   div#long-story, div#short-story{ display: none;}
 }
-div#travel{
+div#guide{
   h2{
     font-size: 1.6em; 
     border-bottom: 1px solid #aaa;
   }
+}
   div.guide{
     @include clearfix;
     margin-bottom: 30px;
@@ -351,7 +356,6 @@ div#travel{
       }
     }
   }
-}
 /**************************************** Nav ****************************************/
 $nav_transition: border-color .8s ease-out, color .4s ease-out;
 

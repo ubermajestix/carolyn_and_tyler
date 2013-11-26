@@ -124,6 +124,8 @@ div.tile {
   div.tile#the-big-day {
     background: url(/images/big-day.jpg) no-repeat center top fixed; }
   div.tile#travel {
+    background: url(/images/eva-beach.jpg) no-repeat center top fixed; }
+  div.tile#guide {
     background: url(/images/travel.jpg) no-repeat center top fixed; }
   div.tile#the-registry {
     background: url(/images/ThePug-1850.jpg) no-repeat center top fixed; }
@@ -165,19 +167,20 @@ div#the-proposal button {
 div#the-proposal div#long-story, div#the-proposal div#short-story {
   display: none; }
 
-div#travel h2 {
+div#guide h2 {
   font-size: 1.6em;
   border-bottom: 1px solid #aaa; }
-div#travel div.guide {
+
+div.guide {
   margin-bottom: 30px; }
-  div#travel div.guide:before, div#travel div.guide:after {
+  div.guide:before, div.guide:after {
     content: "";
     display: table; }
-  div#travel div.guide:after {
+  div.guide:after {
     clear: both; }
-  div#travel div.guide a.btn {
+  div.guide a.btn {
     font-family: 'Thirsty Script Light'; }
-  div#travel div.guide h3 {
+  div.guide h3 {
     font-family: 'Sorren Ex Bold';
     letter-spacing: 2pt;
     line-height: 1;
@@ -186,32 +189,32 @@ div#travel div.guide {
     font-size: 2.2em;
     color: #eee;
     margin: 0; }
-  div#travel div.guide div.actions {
+  div.guide div.actions {
     position: absolute;
     bottom: 5px;
     width: 215px;
     margin: 0; }
-    div#travel div.guide div.actions a {
+    div.guide div.actions a {
       width: 100px;
       margin: 5px 5px 5px 0;
       font-size: 12pt; }
-    div#travel div.guide div.actions span {
+    div.guide div.actions span {
       margin-top: -4px;
       vertical-align: middle; }
-    div#travel div.guide div.actions.more a {
+    div.guide div.actions.more a {
       width: 126px; }
-  div#travel div.guide div.popover {
+  div.guide div.popover {
     font-family: "Voice Medium";
     color: #333333;
     width: 124px; }
-  div#travel div.guide div.ribbon-wrap {
+  div.guide div.ribbon-wrap {
     overflow: hidden;
     position: absolute;
     width: 215px;
     height: 70px;
     left: 19px;
     top: -2px; }
-  div#travel div.guide div.ribbon {
+  div.guide div.ribbon {
     font-family: "Thirsty Script Light";
     position: absolute;
     width: 139px;
@@ -229,25 +232,25 @@ div#travel div.guide {
     line-height: 34px;
     text-align: center;
     text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4); }
-    div#travel div.guide div.ribbon:before {
+    div.guide div.ribbon:before {
       content: "";
       position: absolute;
       bottom: -4px;
       left: -1px;
       border: 2px solid;
       border-color: #508395 transparent transparent transparent; }
-    div#travel div.guide div.ribbon:after {
+    div.guide div.ribbon:after {
       content: "";
       position: absolute;
       bottom: -6px;
       left: 114px;
       border: 3px solid;
       border-color: #508395 transparent transparent transparent; }
-  div#travel div.guide span.glyphicon-phone-alt {
+  div.guide span.glyphicon-phone-alt {
     margin-right: 10px; }
-  div#travel div.guide ul {
+  div.guide ul {
     list-style: none; }
-    div#travel div.guide ul li {
+    div.guide ul li {
       display: inline-block;
       font-size: 10pt;
       background: none;
@@ -255,7 +258,7 @@ div#travel div.guide {
       margin: 5px;
       width: 230px;
       vertical-align: top; }
-      div#travel div.guide ul li > div {
+      div.guide ul li > div {
         border-radius: 4px;
         padding: 10px;
         background: #333333;
@@ -263,9 +266,9 @@ div#travel div.guide {
         text-decoration: none;
         height: 325px;
         position: relative; }
-  div#travel div.guide.getting-there ul li {
+  div.guide.getting-there ul li {
     width: 345px; }
-    div#travel div.guide.getting-there ul li > div {
+    div.guide.getting-there ul li > div {
       height: 535px;
       font-size: 11pt; }
 
