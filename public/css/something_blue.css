@@ -58,6 +58,18 @@ div#the-intro p {
   div#the-intro p span {
     margin: 0 2px; }
 
+span.thirsty-push {
+  margin: 0 2px 0 0; }
+
+span.thirsty-push-3 {
+  margin: 0 3px 0 0; }
+
+span.thirsty-push-4 {
+  margin: 0 4px 0 0; }
+
+span.thirsty-pull {
+  margin: 0 -3px 0 0; }
+
 #footer {
   min-width: 960px;
   background: url("/images/bedge_grunge.png");
