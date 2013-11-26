@@ -143,6 +143,9 @@ div.info {
   text-align: center;
   background: url("/images/blur.png"); }
 
+div#mobile-web {
+  display: none; }
+
 div#the-intro div.info {
   margin-top: 300px; }
 
@@ -151,6 +154,16 @@ p.hint {
   display: none; }
   p.hint small {
     color: #999; }
+
+div#the-proposal button {
+  font-family: 'Sorren Ex Bold';
+  letter-spacing: 2pt;
+  line-height: 1;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.8em; }
+div#the-proposal div#long-story, div#the-proposal div#short-story {
+  display: none; }
 
 div#travel h2 {
   font-size: 1.6em;
@@ -168,9 +181,9 @@ div#travel div.guide {
     font-family: 'Sorren Ex Bold';
     letter-spacing: 2pt;
     line-height: 1;
-    font-size: 2.2em;
     font-weight: normal;
     text-transform: uppercase;
+    font-size: 2.2em;
     color: #eee;
     margin: 0; }
   div#travel div.guide div.actions {
@@ -187,6 +200,10 @@ div#travel div.guide {
       vertical-align: middle; }
     div#travel div.guide div.actions.more a {
       width: 126px; }
+  div#travel div.guide div.popover {
+    font-family: "Voice Medium";
+    color: #333333;
+    width: 124px; }
   div#travel div.guide div.ribbon-wrap {
     overflow: hidden;
     position: absolute;
@@ -389,6 +406,9 @@ div#nav {
   .nav-toggle {
     display: none; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  div#mobile-web {
+    display: block; }
+
   h1, h2, h3, h4, h5 {
     font-family: 'Thirsty Script Light';
     color: white; }

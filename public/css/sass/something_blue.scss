@@ -1,7 +1,13 @@
 $orange: #E59608;
 $green: #638D4E;
 $black: #333;
-
+@mixin sorren-font{
+  font-family: 'Sorren Ex Bold';
+  letter-spacing: 2pt;
+  line-height: 1;
+  font-weight: normal;
+  text-transform: uppercase;
+}
 @mixin clearfix {
   &:before, &:after {
     content:"";
@@ -206,7 +212,7 @@ div.info{
   background: url("/images/blur.png");
 }
 
-
+div#mobile-web{ display: none;}
 
 div#the-intro div.info{
   margin-top:300px;
@@ -216,6 +222,14 @@ p.hint{
   text-align: center;
   display:none;
   small{ color: #999;} 
+}
+
+div#the-proposal{
+  button{
+      @include sorren-font;
+      font-size: 1.8em;
+    }
+  div#long-story, div#short-story{ display: none;}
 }
 div#travel{
   h2{
@@ -229,12 +243,8 @@ div#travel{
       font-family: 'Thirsty Script Light';
     }
     h3{
-      font-family: 'Sorren Ex Bold';
-      letter-spacing: 2pt;
-      line-height: 1;
+      @include sorren-font;
       font-size: 2.2em;
-      font-weight: normal;
-      text-transform: uppercase;
       color: #eee;
       margin: 0;
     }
@@ -255,6 +265,11 @@ div#travel{
       &.more a{
         width: 126px;
       }
+    }
+    div.popover{
+      font-family: "Voice Medium";
+      color: $black;
+      width: 124px;
     }
     div.ribbon-wrap{
       overflow: hidden;
@@ -517,6 +532,7 @@ div#nav{
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 568px) {
+  div#mobile-web{display: block;}
   h1, h2, h3, h4, h5 { 
     font-family: 'Thirsty Script Light';
     color: white;
