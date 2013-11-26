@@ -12,6 +12,7 @@ div#container {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Thirsty Script Light';
+  font-weight: normal;
   color: #111; }
 
 div#the-intro h1 {
@@ -50,6 +51,7 @@ div#the-intro h1 {
 div#the-intro p {
   margin: 0;
   font-family: 'Thirsty Script Light';
+  font-weight: normal;
   text-align: center;
   font-size: 1.5em;
   line-height: 1.5; }
@@ -130,6 +132,7 @@ div.tile {
   div.tile#the-registry {
     background: url(/images/ThePug-1850.jpg) no-repeat center top fixed; }
   div.tile#gallery {
+    display: none;
     background: #333333; }
     div.tile#gallery h1 {
       color: #eee; }
@@ -179,7 +182,8 @@ div.guide {
   div.guide:after {
     clear: both; }
   div.guide a.btn {
-    font-family: 'Thirsty Script Light'; }
+    font-family: 'Thirsty Script Light';
+    font-weight: normal; }
   div.guide h3 {
     font-family: 'Sorren Ex Bold';
     letter-spacing: 2pt;
@@ -215,7 +219,8 @@ div.guide {
     left: 19px;
     top: -2px; }
   div.guide div.ribbon {
-    font-family: "Thirsty Script Light";
+    font-family: 'Thirsty Script Light';
+    font-weight: normal;
     position: absolute;
     width: 139px;
     height: 30px;
@@ -277,7 +282,6 @@ div#nav {
   background: url("/images/blur.png"); }
 
 .nav-collapse {
-  min-width: 960px;
   z-index: 1; }
 
 .nav-collapse, .nav-collapse * {
@@ -293,6 +297,10 @@ div#nav {
   float: left; }
 
 @media screen and (min-width: 46.25em) {
+  .nav-collapse {
+    min-width: 960px;
+    z-index: 1; }
+
   .nav-collapse, .nav-collapse ul {
     text-align: center; }
 
@@ -414,16 +422,17 @@ div#nav {
 
   h1, h2, h3, h4, h5 {
     font-family: 'Thirsty Script Light';
-    color: white; }
+    font-weight: normal;
+    color: #333333; }
 
   div.info {
     border: none;
     border-radius: 0px;
     font-size: 2.0em;
-    background: black;
+    background: url("/images/bedge_grunge.png");
     width: 100%;
     margin: 0 auto;
-    color: white; }
+    color: #333333; }
 
   div.tile {
     padding: 0;
@@ -433,11 +442,11 @@ div#nav {
       background: url(/images/kph-hands-1652-crop.jpg) no-repeat center top;
       min-height: 1000px; }
       div.tile#the-intro h1 {
-        color: black; }
+        color: #333333; }
       div.tile#the-intro div.info {
         font-size: 1.0em;
         background: white;
-        color: black;
+        color: #333333;
         background: url("/images/blur.png"); }
     div.tile#the-couple {
       background: none; }
@@ -449,41 +458,56 @@ div#nav {
       background: none; }
     div.tile#the-registry {
       background: none; }
+    div.tile#gallery {
+      display: block;
+      font-size: 2.0em; }
+      div.tile#gallery .carousel {
+        background: #333333; }
 
-  div#travel h2 {
+  div#the-proposal button {
+    font-family: 'Sorren Ex Bold';
+    letter-spacing: 2pt;
+    line-height: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.2em; }
+
+  div#guide h2 {
     border-bottom: 1px solid #aaa; }
-  div#travel div.guide {
+
+  div.guide {
     margin-bottom: 100px; }
-    div#travel div.guide:before, div#travel div.guide:after {
+    div.guide:before, div.guide:after {
       content: "";
       display: table; }
-    div#travel div.guide:after {
+    div.guide:after {
       clear: both; }
-    div#travel div.guide div.actions {
+    div.guide div.actions {
       position: absolute;
-      bottom: 5px;
-      width: 215px; }
-      div#travel div.guide div.actions a {
-        width: 178px;
+      bottom: 5px; }
+      div.guide div.actions a {
+        width: 158px;
         height: 65px;
         margin: 5px;
         font-size: 24pt; }
-        div#travel div.guide div.actions a span {
+        div.guide div.actions a span {
           margin-top: -4px;
           vertical-align: middle; }
-      div#travel div.guide div.actions.more a {
+      div.guide div.actions.more a {
         width: 248px; }
-        div#travel div.guide div.actions.more a span {
+        div.guide div.actions.more a span {
           margin-top: -8px;
           vertical-align: middle; }
-    div#travel div.guide div.ribbon-wrap {
+    div.guide div.ribbon-wrap {
+      overflow: hidden;
       position: absolute;
       width: 415px;
       height: 152px;
       left: 20px;
       top: -4px; }
-    div#travel div.guide div.ribbon {
-      font-family: "Thirsty Script Light";
+    div.guide div.ribbon {
+      font-family: 'Thirsty Script Light';
+      font-weight: normal;
       position: absolute;
       width: 270px;
       height: 50px;
@@ -501,32 +525,32 @@ div#nav {
       line-height: 34px;
       text-align: center;
       text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4); }
-      div#travel div.guide div.ribbon:before {
+      div.guide div.ribbon:before {
         content: "";
         position: absolute;
         bottom: -4px;
         left: -1px;
         border: 2px solid;
         border-color: #508395 transparent transparent transparent; }
-      div#travel div.guide div.ribbon:after {
+      div.guide div.ribbon:after {
         content: "";
         position: absolute;
         bottom: -6px;
         left: 114px;
         border: 3px solid;
         border-color: #508395 transparent transparent transparent; }
-    div#travel div.guide span.glyphicon-phone-alt {
+    div.guide span.glyphicon-phone-alt {
       margin-right: 10px; }
-    div#travel div.guide ul {
+    div.guide ul {
       list-style: none; }
-      div#travel div.guide ul li {
+      div.guide ul li {
         display: inline-block;
         background: none;
         color: #eee;
         margin: 5px;
         width: 430px;
         vertical-align: top; }
-        div#travel div.guide ul li > div {
+        div.guide ul li > div {
           font-size: 2.0em;
           border-radius: 4px;
           padding: 10px;
@@ -534,4 +558,9 @@ div#nav {
           color: #aaa;
           text-decoration: none;
           height: 825px;
-          position: relative; } }
+          position: relative; }
+    div.guide.getting-there ul li {
+      width: 48%; }
+      div.guide.getting-there ul li > div {
+        height: 1335px;
+        font-size: 2.0em; } }
