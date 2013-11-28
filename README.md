@@ -7,11 +7,18 @@ We're getting married! This is our website about getting married!
   - http://www.myfonts.com/fonts/hubertjocham/voice/
   - http://www.myfonts.com/fonts/yellow-design/thirsty-script
 - Finalize travel guide
-  - Edit Getting There.
-- Toggle proposal story length
-- Build gallery of engagement and other images. Use watermarked
-  engagement photos.
-- Footer
-  - Open source it?
-- Make mobile version
+- Edit Getting There.
+- Edit proposal story
+- Edit "how we met"
+- Add blurbs about Tyler and Carolyn
+- Finalize Footer
+- Open source it?
+
+# Mobile TODO
+- Looks good on iphone5
+- Test iphone4
+- Test iphone3
+- Test samsung
+- Set no zoom cross mobile browsers
+
 
