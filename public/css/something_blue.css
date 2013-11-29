@@ -9,8 +9,7 @@ body {
   color: #37302a;
   font-family: 'Voice Medium';
   font-size: 14pt;
-  line-height: 1.75;
-  min-width: 960px; }
+  line-height: 1.75; }
 
 div#container {
   margin: 0 auto;
@@ -636,15 +635,17 @@ div.guide {
 
   html body {
     width: 100%;
-    min-width: 0px;
+    min-width: none;
     argin: 0;
     padding: 0; }
 
   html body p {
     font-size: 13pt; }
 
-  .tile h1 {
-    font-size: 24pt; }
+  div.tile {
+    min-width: 0; }
+    div.tile h1 {
+      font-size: 24pt; }
 
   div#the-proposal button {
     font-size: 24pt;
