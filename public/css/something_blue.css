@@ -109,7 +109,6 @@ div#the-big-day ul {
       margin-right: 18px; }
 
 #footer {
-  min-width: 960px;
   background: url("/images/bedge_grunge.png");
   margin: 0; }
   #footer h1, #footer h2, #footer h3 {
@@ -126,13 +125,21 @@ div#the-big-day ul {
     clear: both; }
   #footer section {
     padding: 20px;
-    width: 440px;
-    float: left;
-    border: 1px solid #bbb; }
+    width: 480px;
+    float: left; }
     #footer section h2 {
       margin: 0; }
+    #footer section.vendors {
+      float: right; }
     #footer section.made-by-the-groom img {
-      margin: 0 0 0 40px; }
+      margin: 10px auto; }
+    #footer section.made-by-the-groom span {
+      position: absolute;
+      font-family: 'Thirsty Script Light';
+      font-weight: normal;
+      width: 233px;
+      margin-left: -175px;
+      margin-top: 20px; }
   #footer ul {
     margin: 0;
     padding: 0;

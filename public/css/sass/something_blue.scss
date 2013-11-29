@@ -171,7 +171,7 @@ div#the-big-day{
 }
 
 #footer{
-  min-width: 960px; 
+  // min-width: 960px; 
   background: url("/images/bedge_grunge.png");
   margin: 0;
   h1, h2, h3{
@@ -187,12 +187,21 @@ div#the-big-day{
   section{
     h2{ margin: 0; }
     padding: 20px;
-    width: 440px;
+    width: 480px;
     float: left;
-    border: 1px solid #bbb;
+    &.vendors{
+      float: right;
+    }
     &.made-by-the-groom{
       img{
-        margin: 0 0 0 40px;
+        margin: 10px auto;
+      }
+      span{ 
+        position: absolute;
+        @include thirsty-font;
+        width: 233px;
+        margin-left: -175px;
+        margin-top: 20px;
       }
     }
   }
