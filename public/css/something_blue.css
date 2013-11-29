@@ -9,7 +9,8 @@ body {
   color: #37302a;
   font-family: 'Voice Medium';
   font-size: 14pt;
-  line-height: 1.75; }
+  line-height: 1.75;
+  min-width: 960px; }
 
 div#container {
   margin: 0 auto;
@@ -353,6 +354,7 @@ div.guide {
   .nav-collapse.opened {
     max-height: 9999px; }
   .nav-collapse ul {
+    display: none;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -387,7 +389,7 @@ div.guide {
           height: 73px;
           display: block; }
 
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 60.063em) {
   .nav-collapse {
     background: url("/images/blur.png");
     display: block;
@@ -481,11 +483,11 @@ div.guide {
     -moz-background-size: 100px 100px !important;
     -o-background-size: 100px 100px !important;
     background-size: 100px 100px !important; } }
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 60.063em) {
   .nav-toggle {
     display: none; } }
 /**************************************** Retina ****************************************/
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (max-width: 40em), only screen and (max-device-width: 40em) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (max-width: 60em), only screen and (max-device-width: 60em) {
   div#retina {
     display: block; }
 
@@ -621,7 +623,7 @@ div.guide {
         height: 1535px;
         font-size: 2.0em; } }
 /**************************************** Mobile-Web ****************************************/
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 60em) {
   div#mobile-web {
     display: block; }
 

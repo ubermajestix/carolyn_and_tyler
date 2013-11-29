@@ -990,26 +990,36 @@
       };
 
       $('div#nav ul a').bind('click',function(event){
-          event.preventDefault();
-          var $anchor = $(this);
-          if(!is_desktop()){
-            console.log('not desktop')
-            scroll($anchor.attr('href'), 0, -100);
-            activerize($anchor);
-           }
-          else{
-            console.log('desktop')
-            scroll($anchor.attr('href'));
-            activerize($anchor);
-          }
-          return false;
-        });
+        event.preventDefault();
+        var $anchor = $(this);
+        if(!is_desktop()){
+          scroll($anchor.attr('href'), 0, -100);
+          activerize($anchor);
+        }
+        else{
+          scroll($anchor.attr('href'));
+          activerize($anchor);
+        }
+        return false;
+      });
 
         var tiles = [];
         $('div#nav').find('a.tile').each(function(){
           var href = $(this).attr('href');
           tiles.push({href: href, top: $(href).offset().top});
         });
+        var mobile = is_mobile();
+        $(window).resize(function(e){
+          console.log(mobile, is_mobile())
+          if(mobile != is_mobile()){
+            if(is_mobile()){
+              $('#nav ul').hide();
+            }else{
+              $('#nav ul').show();
+            }
+          }
+          mobile = is_mobile();
+        })
 
         var intro_bottom = $('div#the-couple').offset().top + 50;
         var small_nav = false;
