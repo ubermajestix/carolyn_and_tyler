@@ -203,7 +203,7 @@ div.info {
   border: #fff 15px solid;
   padding: 20px;
   text-align: center;
-  background: url("/images/blur.png"); }
+  background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/blur.png"); }
 
 div#mobile-web, div#retina {
   display: none; }
@@ -371,7 +371,7 @@ div.guide {
       width: 200px;
       border-bottom: 1px solid white;
       padding: 10px 10px 0 10px;
-      background: url("/images/blur.png"); }
+      background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/blur.png"); }
       .nav-collapse ul li a {
         font-family: 'Sorren Ex Bold';
         letter-spacing: 2pt;
@@ -390,14 +390,14 @@ div.guide {
       .nav-collapse ul li.pug {
         height: 73px; }
         .nav-collapse ul li.pug a {
-          background: url("/images/pug-icon.png") no-repeat;
+          background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/pug-icon.png") no-repeat;
           width: 60px;
           height: 73px;
           display: block; }
 
 @media only screen and (min-width: 60.063em) {
   .nav-collapse {
-    background: url("/images/blur.png");
+    background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/blur.png");
     display: block;
     width: 100%;
     min-width: 960px;
@@ -452,7 +452,7 @@ div.guide {
           padding-top: 16px; }
           .nav-collapse ul li.pug a {
             z-index: 1000;
-            background: url("/images/pug-icon.png") no-repeat;
+            background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/pug-icon.png") no-repeat;
             width: 60px;
             height: 66px;
             padding-bottom: 20px; }
@@ -506,7 +506,7 @@ div.guide {
     border: none;
     border-radius: 0px;
     font-size: 2.0em;
-    background: url("/images/bedge_grunge.png");
+    background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/bedge_grunge.png");
     width: 100%;
     margin: 0 auto;
     color: #333333; }
@@ -516,7 +516,7 @@ div.guide {
     margin: 0 auto;
     min-height: 0; }
     div.tile#the-intro {
-      background: url(/images/kph-hands-1652-crop.jpg) no-repeat center top;
+      background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-intro-mobile.jpg) no-repeat center top;
       min-height: 1000px; }
       div.tile#the-intro h1 {
         color: #333333; }
@@ -524,7 +524,8 @@ div.guide {
         font-size: 1.0em;
         background: white;
         color: #333333;
-        background: url("/images/blur.png"); }
+        background: url("/images/blur.png");
+        margin-top: 360px; }
     div.tile#the-couple {
       background: none; }
     div.tile#the-proposal {

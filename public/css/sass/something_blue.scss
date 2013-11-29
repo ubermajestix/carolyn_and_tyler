@@ -287,7 +287,7 @@ div.info{
   border: #fff 15px solid;
   padding: 20px;
   text-align: center;
-  background: url("/images/blur.png");
+  background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/blur.png");
 }
 
 div#mobile-web, div#retina{ display: none;}
@@ -471,7 +471,7 @@ div#nav{
       width: 200px;
       border-bottom: 1px solid white;
       padding: 10px 10px 0 10px;
-      background: url("/images/blur.png");
+      background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/blur.png");
       a {
         @include sorren-font;
         font-size: 24pt;
@@ -489,7 +489,7 @@ div#nav{
       &.pug{
         height: 73px;
         a{
-          background: url("/images/pug-icon.png") no-repeat;
+          background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/pug-icon.png") no-repeat;
           width: 60px;
           height: 73px;
           display: block;
@@ -502,7 +502,7 @@ div#nav{
 
 @media #{$medium-up}{
 .nav-collapse{
-  background: url("/images/blur.png");
+  background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/blur.png");
   display: block;
   width: 100%;
   min-width: 960px; 
@@ -560,7 +560,7 @@ div#nav{
         padding-top: 16px;
         a{
         z-index: 1000;
-          background: url("/images/pug-icon.png") no-repeat;
+          background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/pug-icon.png") no-repeat;
           width: 60px;
           height: 66px;
           padding-bottom: 20px;
@@ -634,7 +634,7 @@ div#nav{
     border: none;
     border-radius: 0px;
     font-size: 2.0em;
-    background: url('/images/bedge_grunge.png');
+    background: url('http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/bedge_grunge.png');
     width: 100%;
     margin: 0 auto;
     color: $black;
@@ -644,7 +644,7 @@ div#nav{
     margin:0 auto;
     min-height: 0;
     &#the-intro{
-      background: url(/images/kph-hands-1652-crop.jpg) no-repeat center top; 
+      background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-intro-mobile.jpg) no-repeat center top; 
       min-height: 1000px;
       h1{
         color: $black;
@@ -654,6 +654,7 @@ div#nav{
         background: white;
         color: $black;
         background: url("/images/blur.png");
+        margin-top: 360px;
       }
     }
     &#the-couple{
