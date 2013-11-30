@@ -843,7 +843,7 @@
 
     <div class="tile" id="gallery">
       <h1>The Gallery</h1>
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <div id="carousel-example-generic" class="carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">
           <!-- <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li> -->
@@ -851,7 +851,7 @@
           <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
         </ol>
         <div class="carousel-inner">
-          <div class="item">
+          <div class="item active">
             <img src="http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-couple.jpg" alt="...">
             <div class="carousel-caption">
             </div>
@@ -872,12 +872,12 @@
             </div>
           </div>
           <div class="item">
-            <img src="http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/guide.jpg" alt="...">
+            <img src="http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/guide.jpg" alt="1650x989">
             <div class="carousel-caption">
             </div>
           </div>
-          <div class="item active">
-            <img src="http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-registry.jpg" alt="...">
+          <div class="item">
+            <img src="http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-registry.jpg" alt="1650x989">
             <div class="carousel-caption">
             </div>
           </div>
@@ -930,6 +930,11 @@
       function is_desktop(){
         !is_mobile() && !is_retina();
       }
+      $('.carousel').carousel({
+        interval: 2000
+      });
+      $('.carousel').carousel('pause');
+
       $('button.long-story').click(function(){
         $(this).hide();
         $('button.short-story').text('read the short version');
@@ -947,7 +952,7 @@
       // Deal with telephone scripts
       $('div.guide a.tel').each(function(i,e){
         var href = $(e).attr('href')
-        if(href.match(/tel:/) && window.is_retina){
+        if(href.match(/tel:/) && is_retina()){
           var tel = href.replace('tel:', '');
           $(e).popover({content: tel});
           $(e).removeAttr("href");
@@ -986,7 +991,7 @@
         history.replaceState({page_name: page_name, path: path}, page_name, path);
       };
       
-      window.onpopstate = function(event){console.log('pop', event);}; 
+      // window.onpopstate = function(event){console.log('pop', event);}; 
       function activerize($anchor){
         $('li.active').removeClass('active');
         $anchor.parent('li').addClass('active');
@@ -1013,7 +1018,6 @@
         });
         var mobile = is_mobile();
         $(window).resize(function(e){
-          console.log(mobile, is_mobile())
           if(mobile != is_mobile()){
             if(is_mobile()){
               $('#nav ul').hide();
@@ -1036,7 +1040,6 @@
               var speed = 500;  
               if(small_nav === false && top_of_viewport >= intro_bottom){
                 small_nav = true;
-                console.log('past the intro');
                 setTimeout(function() {
                   $('div#nav li, div#nav ul, div#nav a').stop(true, true)
                   $('div#nav ul').animate({'padding-top': '0px'}, speed, function(){
@@ -1051,7 +1054,6 @@
               }
               // Unshrink Nav
               if(small_nav == true && top_of_viewport <= intro_bottom){
-                console.log('in the intro');
                 small_nav = false;
                 $('div#nav li, div#nav ul, div#nav li a').stop(true, true)
                 $('div#nav ul').animate({'padding-top': '22px'}, speed, function(){

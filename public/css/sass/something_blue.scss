@@ -675,8 +675,13 @@ div#nav{
     &#gallery{
       display: block;
       font-size: 2.0em;
+      padding-bottom: 110px;
       .carousel{
         background: $black;
+        img{
+          // height: 50%;
+          // width: 100%;
+        }
       }
     }
   }

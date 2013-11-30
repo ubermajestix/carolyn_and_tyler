@@ -538,7 +538,8 @@ div.guide {
       background: none; }
     div.tile#gallery {
       display: block;
-      font-size: 2.0em; }
+      font-size: 2.0em;
+      padding-bottom: 110px; }
       div.tile#gallery .carousel {
         background: #333333; }
 
