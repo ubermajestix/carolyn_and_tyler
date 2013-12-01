@@ -36,3 +36,17 @@ $retina: "#{$screen} and (-webkit-min-device-pixel-ratio: 2),
 #{$screen} and (min-device-pixel-ratio: 2),
 #{$screen} and (min-resolution: 192dpi),
 #{$screen} and (min-resolution: 2dppx)" !default;
+
+$retina-portrait: "#{$screen} and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+#{$screen} and (min--moz-device-pixel-ratio: 2) and (orientation: portrait),
+#{$screen} and (-o-min-device-pixel-ratio: 2/1) and (orientation: portrait),
+#{$screen} and (min-device-pixel-ratio: 2) and (orientation: portrait),
+#{$screen} and (min-resolution: 192dpi) and (orientation: portrait),
+#{$screen} and (min-resolution: 2dppx) and (orientation: portrait)" !default;
+
+$retina-landscape: "#{$screen} and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+#{$screen} and (min--moz-device-pixel-ratio: 2) and (orientation: landscape),
+#{$screen} and (-o-min-device-pixel-ratio: 2/1) and (orientation: landscape),
+#{$screen} and (min-device-pixel-ratio: 2) and (orientation: landscape),
+#{$screen} and (min-resolution: 192dpi) and (orientation: landscape),
+#{$screen} and (min-resolution: 2dppx) and (orientation: landscape)" !default;

@@ -152,7 +152,7 @@ span.thirsty-pull{
 
 div#the-big-day{
   ul{
-    list-style: none;
+    // list-style: none;
     li{
       padding: 10px;
       // background: $black;
@@ -307,11 +307,12 @@ p.hint{
   small{ color: #999;} 
 }
 
+button.btn-lg{
+  @include sorren-font;
+  font-size: 24pt;
+}
+
 div#the-proposal{
-  button{
-      @include sorren-font;
-      font-size: 1.8em;
-    }
   div#long-story, div#short-story{ display: none;}
 }
 div#guide{
@@ -417,7 +418,6 @@ div#guide{
           padding: 10px;
           background: $black;
           color: #ddd;
-          text-decoration: none;
           height: 325px;
           position: relative;
         }
@@ -626,8 +626,17 @@ div#nav{
     display: none;
   }
 }
+@media #{$retina-landscape}{
+  #nav{
+    display: none;
+  }
+}
+@media #{$retina-portrait}{
+  #nav{
+    display: block;
+  }
+}
 /**************************************** Retina ****************************************/
-
 @media #{$retina}, #{$mobile-web} {
   
   div#retina{display: block;}
@@ -660,6 +669,12 @@ div#nav{
         color: $black;
         background: url("#{$cloudfront}/blur.png");
         margin-top: 360px;
+        span{
+          &.space{
+            display: inline-block;
+            margin:0 0px 0 0px;
+          }
+        }
       }
     }
     &#the-couple{
@@ -690,12 +705,7 @@ div#nav{
       }
     }
   }
-  div#the-proposal{
-  button{
-      @include sorren-font;
-      font-size: 1.2em;
-    }
-  }
+
   div#guide{
     h2{
       border-bottom: 1px solid #aaa;
@@ -714,6 +724,7 @@ div#nav{
       position: absolute;
       bottom: 15px;
       width: 100%;
+
       a{
         width: auto;
         margin: 5px 5px 5px 0;
@@ -767,21 +778,11 @@ div#nav{
     ul{
       list-style: none;
       li{
-        display: inline-block;
-        background: none;
-        color: $white;
-        margin: 5px;
         width: 430px;
-        vertical-align: top;
         > div{
           font-size: 2.0em;
-          border-radius: 4px;
-          padding: 20px;
-          background: #333;
-          color: #aaa;
-          text-decoration: none;
+          padding: 20px 20px 5px 20px;
           height: 825px;
-          position: relative;
         }
       }
     }
@@ -820,12 +821,6 @@ div#nav{
     }
   }
 
-  div#the-proposal{
-    button{
-      font-size: 24pt;
-      margin: 10px 0 0 0;
-    }
-  }
   div.guide{
     width: 100%;
     ul{
@@ -845,11 +840,12 @@ div#nav{
     div.actions{
       position: relative;
       width: 100%;
+      margin-top: 40px;
        a{
         width: auto;
         margin: 5px 5px 5px 0;
-        padding: 12px 10px 0 10px;
-        // font-size: 12pt;
+        padding: 12px 10px 6px 10px;
+        font-size: 16pt;
       }
       span{
         margin-top: -4px;

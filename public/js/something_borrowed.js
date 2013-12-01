@@ -3,11 +3,12 @@ function is_mobile(){
   return $('#mobile-web').is(':visible'); 
 }
 function is_retina(){ 
-  return $('retina').is(':visible'); 
+  return $('#retina').is(':visible'); 
 }
 function is_desktop(){
-  return !is_mobile() && !is_retina();
+  return (!is_mobile() && !is_retina());
 }
+console.log(is_desktop(), is_mobile(), is_retina());
 $('.carousel').carousel({
   interval: 2000
 });

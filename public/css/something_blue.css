@@ -88,27 +88,25 @@ span.thirsty-push-4 {
 span.thirsty-pull {
   margin: 0 -3px 0 0; }
 
-div#the-big-day ul {
-  list-style: none; }
-  div#the-big-day ul li {
-    padding: 10px;
-    display: block;
-    font-family: 'Sorren Ex Bold';
-    letter-spacing: 2pt;
-    line-height: 1;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 24pt;
-    line-height: 2; }
-    div#the-big-day ul li span.time {
-      display: inline-block;
-      min-width: 80px; }
-    div#the-big-day ul li img {
-      height: 40px;
-      width: 40px;
-      margin-right: 10px; }
-    div#the-big-day ul li i {
-      margin-right: 18px; }
+div#the-big-day ul li {
+  padding: 10px;
+  display: block;
+  font-family: 'Sorren Ex Bold';
+  letter-spacing: 2pt;
+  line-height: 1;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 24pt;
+  line-height: 2; }
+  div#the-big-day ul li span.time {
+    display: inline-block;
+    min-width: 80px; }
+  div#the-big-day ul li img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px; }
+  div#the-big-day ul li i {
+    margin-right: 18px; }
 
 #footer {
   background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/bedge_grunge.png");
@@ -220,13 +218,14 @@ p.hint {
   p.hint small {
     color: #999; }
 
-div#the-proposal button {
+button.btn-lg {
   font-family: 'Sorren Ex Bold';
   letter-spacing: 2pt;
   line-height: 1;
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 1.8em; }
+  font-size: 24pt; }
+
 div#the-proposal div#long-story, div#the-proposal div#short-story {
   display: none; }
 
@@ -331,7 +330,6 @@ div.guide {
         padding: 10px;
         background: #333333;
         color: #ddd;
-        text-decoration: none;
         height: 325px;
         position: relative; }
   div.guide.getting-there ul li {
@@ -488,6 +486,12 @@ div.guide {
 @media only screen and (min-width: 60.063em) {
   .nav-toggle {
     display: none; } }
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min--moz-device-pixel-ratio: 2) and (orientation: landscape), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (orientation: landscape), only screen and (min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-resolution: 192dpi) and (orientation: landscape), only screen and (min-resolution: 2dppx) and (orientation: landscape) {
+  #nav {
+    display: none; } }
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min--moz-device-pixel-ratio: 2) and (orientation: portrait), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (orientation: portrait), only screen and (min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-resolution: 192dpi) and (orientation: portrait), only screen and (min-resolution: 2dppx) and (orientation: portrait) {
+  #nav {
+    display: block; } }
 /**************************************** Retina ****************************************/
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (max-width: 60em), only screen and (max-device-width: 60em) {
   div#retina {
@@ -522,6 +526,9 @@ div.guide {
         color: #333333;
         background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/blur.png");
         margin-top: 360px; }
+        div.tile#the-intro div.info span.space {
+          display: inline-block;
+          margin: 0 0px 0 0px; }
     div.tile#the-couple {
       background: none; }
     div.tile#the-proposal {
@@ -538,14 +545,6 @@ div.guide {
       padding-bottom: 110px; }
       div.tile#gallery .carousel {
         background: #333333; }
-
-  div#the-proposal button {
-    font-family: 'Sorren Ex Bold';
-    letter-spacing: 2pt;
-    line-height: 1;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 1.2em; }
 
   div#guide h2 {
     border-bottom: 1px solid #aaa; }
@@ -606,21 +605,11 @@ div.guide {
     div.guide ul {
       list-style: none; }
       div.guide ul li {
-        display: inline-block;
-        background: none;
-        color: #eeeeee;
-        margin: 5px;
-        width: 430px;
-        vertical-align: top; }
+        width: 430px; }
         div.guide ul li > div {
           font-size: 2.0em;
-          border-radius: 4px;
-          padding: 20px;
-          background: #333;
-          color: #aaa;
-          text-decoration: none;
-          height: 825px;
-          position: relative; }
+          padding: 20px 20px 5px 20px;
+          height: 825px; }
     div.guide.getting-there ul li {
       width: 48%; }
       div.guide.getting-there ul li > div {
@@ -645,10 +634,6 @@ div.guide {
     div.tile h1 {
       font-size: 24pt; }
 
-  div#the-proposal button {
-    font-size: 24pt;
-    margin: 10px 0 0 0; }
-
   div.guide {
     width: 100%; }
     div.guide ul {
@@ -663,11 +648,13 @@ div.guide {
           font-size: 2.0em; }
     div.guide div.actions {
       position: relative;
-      width: 100%; }
+      width: 100%;
+      margin-top: 40px; }
       div.guide div.actions a {
         width: auto;
         margin: 5px 5px 5px 0;
-        padding: 12px 10px 0 10px; }
+        padding: 12px 10px 6px 10px;
+        font-size: 16pt; }
       div.guide div.actions span {
         margin-top: -4px;
         vertical-align: middle; }
