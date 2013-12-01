@@ -20,6 +20,9 @@ h1, h2, h3, h4, h5 {
   font-weight: normal;
   color: #111; }
 
+p.more {
+  display: none; }
+
 div#the-intro h1 {
   font-size: 3.0em;
   margin: 0;
@@ -108,7 +111,7 @@ div#the-big-day ul {
       margin-right: 18px; }
 
 #footer {
-  background: url("/images/bedge_grunge.png");
+  background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/bedge_grunge.png");
   margin: 0; }
   #footer h1, #footer h2, #footer h3 {
     font-family: 'Sorren Ex Medium';

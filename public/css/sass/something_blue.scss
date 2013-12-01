@@ -49,6 +49,10 @@ h1, h2, h3, h4, h5 {
   @include thirsty-font;
   color: #111;
 }
+p.more {
+  display: none;
+}
+
 div#the-intro{
   h1{ 
     font-size: 3.0em;
@@ -170,7 +174,7 @@ div#the-big-day{
 }
 
 #footer{
-  background: url("/images/bedge_grunge.png");
+  background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/bedge_grunge.png");
   margin: 0;
   h1, h2, h3{
     font-family: 'Sorren Ex Medium';
