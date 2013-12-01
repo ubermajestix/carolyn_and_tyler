@@ -390,10 +390,11 @@ div.guide {
         .nav-collapse ul li a:focus {
           background: #e59608;
           outline: none; }
-        .nav-collapse ul li a.active {
+      .nav-collapse ul li.active {
+        border-bottom: 5px solid #e59608; }
+        .nav-collapse ul li.active a {
           -webkit-font-smoothing: subpixel-antialiased;
-          color: #e59608;
-          border-bottom: 5px solid #e59608; }
+          color: #e59608; }
       .nav-collapse ul li.pug {
         height: 73px; }
         .nav-collapse ul li.pug a {
@@ -463,14 +464,17 @@ div.guide {
             width: 60px;
             height: 66px;
             padding-bottom: 20px; }
-        .nav-collapse ul li.active a {
-          -webkit-font-smoothing: subpixel-antialiased;
-          color: #e59608;
-          border-bottom: 5px solid #e59608; }
-          .nav-collapse ul li.active a:hover {
-            text-decoration: none; }
-          .nav-collapse ul li.active a:focus {
-            background: #e59608; } }
+        .nav-collapse ul li.active {
+          border: none; }
+          .nav-collapse ul li.active a {
+            -webkit-font-smoothing: subpixel-antialiased;
+            color: #e59608;
+            text-decoration: none;
+            border-bottom: 5px solid #e59608; }
+            .nav-collapse ul li.active a:hover {
+              text-decoration: none; }
+            .nav-collapse ul li.active a:focus {
+              text-decoration: none; } }
 .nav-toggle {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
@@ -487,17 +491,38 @@ div.guide {
   float: right;
   right: 0px;
   text-indent: -9999px;
-  background: black url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/hamburger.gif") no-repeat 50% 45%; }
+  background: #cbc7bf url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/hamburger.gif") no-repeat 50% 45%; }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .nav-toggle {
+    background-image: url("/images/hamburger-retina.gif");
+    -webkit-background-size: 100px 100px !important;
+    -moz-background-size: 100px 100px !important;
+    -o-background-size: 100px 100px !important;
+    background-size: 100px 100px !important;
+    background-color: #CBC7BF;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: block;
+    float: right;
+    right: 0px; }
+
+  #nav a {
+    text-decoration: none;
+    border-bottom-color: none; }
+    #nav a:hover, #nav a:focus {
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased;
+      color: #333333;
+      border-bottom-color: none;
+      -webkit-transition: none;
+      -moz-transition: border-color 0.8s ease-out, color 0.4s ease-out;
+      -o-transition: border-color 0.8s ease-out, color 0.4s ease-out;
+      transition: border-color 0.8s ease-out, color 0.4s ease-out; } }
 @media only screen and (min-width: 60.063em) {
   .nav-toggle {
     display: none; } }
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape), only screen and (min--moz-device-pixel-ratio: 2) and (orientation: landscape), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (orientation: landscape), only screen and (min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-resolution: 192dpi) and (orientation: landscape), only screen and (min-resolution: 2dppx) and (orientation: landscape) {
-  #nav {
-    display: none; } }
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait), only screen and (min--moz-device-pixel-ratio: 2) and (orientation: portrait), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (orientation: portrait), only screen and (min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-resolution: 192dpi) and (orientation: portrait), only screen and (min-resolution: 2dppx) and (orientation: portrait) {
-  #nav {
-    display: block; } }
 /**************************************** Retina ****************************************/
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   div#retina {
@@ -520,7 +545,8 @@ div.guide {
   div.tile {
     padding: 0;
     margin: 0 auto;
-    min-height: 0; }
+    min-height: 0;
+    border-width: 10px; }
     div.tile#the-intro {
       background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-intro-mobile.jpg) no-repeat center top;
       min-height: 1000px; }

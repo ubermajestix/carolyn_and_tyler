@@ -38,7 +38,7 @@ $('button.more').click(function(){
 // Deal with telephone scripts
 $('div.guide a.tel').each(function(i,e){
   var href = $(e).attr('href');
-  if(href.match(/tel:/) && is_retina()){
+  if(href.match(/tel:/) && !is_retina()){
     var tel = href.replace('tel:', '');
     $(e).popover({content: tel});
     $(e).removeAttr("href");
@@ -47,7 +47,8 @@ $('div.guide a.tel').each(function(i,e){
 
 // ------ Nav
 $('#custom-nav-toggle').click(function(e){
-  $('.nav-collapse ul').toggle();
+  $('.nav-collapse ul').show();
+  $(this).hide();
   e.preventDefault();
   return false;
 });
@@ -83,22 +84,28 @@ function push_state($anchor){
 
 // window.onpopstate = function(event){console.log('pop', event);}; 
 function activerize($anchor){
-  $('li.active').removeClass('active');
+  $('div#nav li').removeClass('active');
   $anchor.parent('li').addClass('active');
 }
-
+if(is_mobile()){
+  $('#nav li.pug').hide();
+}
 $('div#nav ul a').bind('click',function(event){
   event.preventDefault();
   var $anchor = $(this);
   if(!is_desktop()){
-    scroll($anchor.attr('href'), 0, -100);
+    scroll($anchor.attr('href'), 0, 0);
     activerize($anchor);
+    setTimeout(function(){
+      $('#nav ul').hide();
+      $('#custom-nav-toggle').show();
+    }, 800);
   }
   else{
     scroll($anchor.attr('href'));
     activerize($anchor);
   }
-  return false;
+  // return false;
 });
 
 var tiles = [];
@@ -110,8 +117,10 @@ var mobile = is_mobile();
 $(window).resize(function(e){
   if(mobile != is_mobile()){
     if(is_mobile()){
+      $('#nav li.pug').hide();
       $('#nav ul').hide();
     }else{
+      $('#nav li.pug').css({display: 'inline-block'});
       $('#nav ul').show();
     }
   }
@@ -124,6 +133,10 @@ var nav_offset = 200;
 $(window).scroll(function(){
   if(!scrolling){
     var top_of_viewport = $(window).scrollTop();
+    if(!is_desktop()){
+      $('#nav ul').hide();
+      $('#custom-nav-toggle').show();
+    }
     if(is_desktop()){
       // Shrink Nav
       var speed = 500;  

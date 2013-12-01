@@ -487,11 +487,13 @@ div#nav{
           background: $orange;
           outline: none;
         }
-        &.active{
-          -webkit-font-smoothing: subpixel-antialiased;
-          color: $orange;
-          border-bottom: 5px solid $orange;
-        }
+      }
+      &.active{
+        a{
+        -webkit-font-smoothing: subpixel-antialiased;
+        color: $orange;
+      }
+        border-bottom: 5px solid $orange;
       }
       &.pug{
         height: 73px;
@@ -575,16 +577,18 @@ div#nav{
         }
       }
       &.active{
+        border: none;
         a{
           -webkit-font-smoothing: subpixel-antialiased;
           color: $orange;
+          text-decoration: none;
           border-bottom: 5px solid $orange;
           &:hover {
             text-decoration: none;
           }
 
           &:focus {
-            background: $orange;
+            text-decoration: none;
           }
         }
       }
@@ -610,32 +614,45 @@ div#nav{
   float: right;
   right: 0px;
   text-indent: -9999px;
-  background: #000 url("#{$cloudfront}/hamburger.gif") no-repeat 50% 45%;
+  background: #CBC7BF url("#{$cloudfront}/hamburger.gif") no-repeat 50% 45%;
 }
 
-// @media #{$retina}{
-//   .nav-toggle {
-//     background-image: url("../images/hamburger-retina.gif");
-//     -webkit-background-size: 100px 100px !important;
-//     -moz-background-size: 100px 100px !important;
-//     -o-background-size: 100px 100px !important;
-//     background-size: 100px 100px !important;
-//   }
-// }
+@media #{$retina}{
+  .nav-toggle {
+    background-image: url("#{$cloudfront}/hamburger-retina.gif");
+    -webkit-background-size: 100px 100px !important;
+    -moz-background-size: 100px 100px !important;
+    -o-background-size: 100px 100px !important;
+    background-size: 100px 100px !important;
+    background-color: #CBC7BF;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: block;
+    float: right;
+    right: 0px;
+  }
+  #nav{
+    a{
+      text-decoration: none;
+      border-bottom-color: none;
+      &:hover, &:focus {
+        text-decoration: none;
+        -webkit-font-smoothing: antialiased;
+        color: $black;
+        border-bottom-color: none;
+        -webkit-transition: none;
+        -moz-transition: $nav_transition;
+        -o-transition: $nav_transition;
+        transition: $nav_transition;
+      }
+    }
+  }
+}
 
 @media #{$medium-up}{
   .nav-toggle {
     display: none;
-  }
-}
-@media #{$retina-landscape}{
-  #nav{
-    display: none;
-  }
-}
-@media #{$retina-portrait}{
-  #nav{
-    display: block;
   }
 }
 
@@ -663,6 +680,7 @@ div#nav{
     padding: 0;
     margin:0 auto;
     min-height: 0;
+    border-width: 10px;
     &#the-intro{
       background: url(#{$cloudfront}/the-intro-mobile.jpg) no-repeat center top; 
       min-height: 1000px;
