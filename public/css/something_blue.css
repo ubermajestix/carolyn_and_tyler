@@ -209,6 +209,12 @@ div.info {
 div#mobile-web, div#retina {
   display: none; }
 
+div#retina-landscape {
+  display: none; }
+
+div#retina-portrait {
+  display: none; }
+
 div#the-intro div.info {
   margin-top: 300px; }
 
@@ -486,17 +492,17 @@ div.guide {
 @media only screen and (min-width: 60.063em) {
   .nav-toggle {
     display: none; } }
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min--moz-device-pixel-ratio: 2) and (orientation: landscape), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (orientation: landscape), only screen and (min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-resolution: 192dpi) and (orientation: landscape), only screen and (min-resolution: 2dppx) and (orientation: landscape) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape), only screen and (min--moz-device-pixel-ratio: 2) and (orientation: landscape), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (orientation: landscape), only screen and (min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-resolution: 192dpi) and (orientation: landscape), only screen and (min-resolution: 2dppx) and (orientation: landscape) {
   #nav {
     display: none; } }
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min--moz-device-pixel-ratio: 2) and (orientation: portrait), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (orientation: portrait), only screen and (min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-resolution: 192dpi) and (orientation: portrait), only screen and (min-resolution: 2dppx) and (orientation: portrait) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait), only screen and (min--moz-device-pixel-ratio: 2) and (orientation: portrait), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (orientation: portrait), only screen and (min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-resolution: 192dpi) and (orientation: portrait), only screen and (min-resolution: 2dppx) and (orientation: portrait) {
   #nav {
     display: block; } }
 /**************************************** Retina ****************************************/
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (max-width: 60em), only screen and (max-device-width: 60em) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   div#retina {
-    display: block; }
-
+    display: block; } }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (max-width: 60em), only screen and (max-device-width: 60em) {
   h1, h2, h3, h4, h5 {
     font-family: 'Thirsty Script Light';
     font-weight: normal;
@@ -506,7 +512,7 @@ div.guide {
     border: none;
     border-radius: 0px;
     font-size: 2.0em;
-    background: url("/bedge_grunge.png");
+    background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/bedge_grunge.png");
     width: 100%;
     margin: 0 auto;
     color: #333333; }
@@ -536,6 +542,8 @@ div.guide {
     div.tile#the-big-day {
       background: none; }
     div.tile#travel {
+      background: none; }
+    div.tile#guide {
       background: none; }
     div.tile#the-registry {
       background: none; }
@@ -581,8 +589,8 @@ div.guide {
       position: absolute;
       width: 415px;
       height: 152px;
-      left: 20px;
-      top: -4px; }
+      left: 24px;
+      top: -8px; }
     div.guide div.ribbon {
       width: 270px;
       height: 50px;
@@ -591,14 +599,14 @@ div.guide {
       padding: 10px 0 0 0;
       font-size: 24pt; }
       div.guide div.ribbon:before {
-        bottom: -4px;
-        left: -1px;
-        border: 2px solid;
+        bottom: -14px;
+        left: 3px;
+        border: 7px solid;
         border-color: #508395 transparent transparent transparent; }
       div.guide div.ribbon:after {
-        bottom: -6px;
-        left: 114px;
-        border: 3px solid;
+        bottom: -16px;
+        left: 256px;
+        border: 8px solid;
         border-color: #508395 transparent transparent transparent; }
     div.guide span.glyphicon-phone-alt {
       margin-right: 10px; }
@@ -623,7 +631,7 @@ div.guide {
   html body {
     width: 100%;
     min-width: none;
-    argin: 0;
+    margin: 0;
     padding: 0; }
 
   html body p {
@@ -698,3 +706,6 @@ div.guide {
       div.guide.getting-there ul li > div {
         height: auto;
         font-size: 2.0em; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  html body p {
+    font-size: 18pt; } }
