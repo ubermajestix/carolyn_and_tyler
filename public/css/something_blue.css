@@ -483,15 +483,8 @@ div.guide {
   float: right;
   right: 0px;
   text-indent: -9999px;
-  background: black url("/images/hamburger.gif") no-repeat 50% 45%; }
+  background: black url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/hamburger.gif") no-repeat 50% 45%; }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .nav-toggle {
-    background-image: url("../images/hamburger-retina.gif");
-    -webkit-background-size: 100px 100px !important;
-    -moz-background-size: 100px 100px !important;
-    -o-background-size: 100px 100px !important;
-    background-size: 100px 100px !important; } }
 @media only screen and (min-width: 60.063em) {
   .nav-toggle {
     display: none; } }
@@ -509,7 +502,7 @@ div.guide {
     border: none;
     border-radius: 0px;
     font-size: 2.0em;
-    background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/bedge_grunge.png");
+    background: url("/bedge_grunge.png");
     width: 100%;
     margin: 0 auto;
     color: #333333; }

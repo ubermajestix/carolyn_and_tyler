@@ -4,6 +4,7 @@ $orange: #E59608;
 $green: #638D4E;
 $black: #333;
 $white: #eee;
+$cloudfront: "http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler";
 
 @mixin sorren-font{
   font-family: 'Sorren Ex Bold';
@@ -174,7 +175,7 @@ div#the-big-day{
 }
 
 #footer{
-  background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/bedge_grunge.png");
+  background: url("#{$cloudfront}/bedge_grunge.png");
   margin: 0;
   h1, h2, h3{
     font-family: 'Sorren Ex Medium';
@@ -252,25 +253,25 @@ div.tile{
   border-top: 2px solid $white;
   background-size: cover;
   &#the-intro{
-    background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-intro.jpg) no-repeat center top fixed; 
+    background: url(#{$cloudfront}/the-intro.jpg) no-repeat center top fixed; 
   }
   &#the-couple{
-    background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-couple.jpg) no-repeat center top fixed; 
+    background: url(#{$cloudfront}/the-couple.jpg) no-repeat center top fixed; 
   }
   &#the-proposal{
-    background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-proposal.jpg) no-repeat center top fixed; 
+    background: url(#{$cloudfront}/the-proposal.jpg) no-repeat center top fixed; 
   }
   &#the-big-day{
-    background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-big-day.jpg) no-repeat center center fixed; 
+    background: url(#{$cloudfront}/the-big-day.jpg) no-repeat center center fixed; 
   }
   &#travel{
-    background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/travel.jpg) no-repeat center top fixed; 
+    background: url(#{$cloudfront}/travel.jpg) no-repeat center top fixed; 
   }
   &#guide{
-    background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/guide.jpg) no-repeat center top fixed; 
+    background: url(#{$cloudfront}/guide.jpg) no-repeat center top fixed; 
   }
   &#the-registry{
-    background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-registry.jpg) no-repeat center top fixed; 
+    background: url(#{$cloudfront}/the-registry.jpg) no-repeat center top fixed; 
   }
   &#gallery{
     display: none;
@@ -291,7 +292,7 @@ div.info{
   border: #fff 15px solid;
   padding: 20px;
   text-align: center;
-  background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/blur.png");
+  background: url("#{$cloudfront}/blur.png");
 }
 
 div#mobile-web, div#retina{ display: none;}
@@ -475,7 +476,7 @@ div#nav{
       width: 200px;
       border-bottom: 1px solid white;
       padding: 10px 10px 0 10px;
-      background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/blur.png");
+      background: url("#{$cloudfront}/blur.png");
       a {
         @include sorren-font;
         font-size: 24pt;
@@ -493,7 +494,7 @@ div#nav{
       &.pug{
         height: 73px;
         a{
-          background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/pug-icon.png") no-repeat;
+          background: url("#{$cloudfront}/pug-icon.png") no-repeat;
           width: 60px;
           height: 73px;
           display: block;
@@ -506,7 +507,7 @@ div#nav{
 
 @media #{$medium-up}{
 .nav-collapse{
-  background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/blur.png");
+  background: url("#{$cloudfront}/blur.png");
   display: block;
   width: 100%;
   min-width: 960px; 
@@ -564,7 +565,7 @@ div#nav{
         padding-top: 16px;
         a{
         z-index: 1000;
-          background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/pug-icon.png") no-repeat;
+          background: url("#{$cloudfront}/pug-icon.png") no-repeat;
           width: 60px;
           height: 66px;
           padding-bottom: 20px;
@@ -607,18 +608,18 @@ div#nav{
   float: right;
   right: 0px;
   text-indent: -9999px;
-  background: #000 url("/images/hamburger.gif") no-repeat 50% 45%;
+  background: #000 url("#{$cloudfront}/hamburger.gif") no-repeat 50% 45%;
 }
 
-@media #{$retina}{
-  .nav-toggle {
-    background-image: url("../images/hamburger-retina.gif");
-    -webkit-background-size: 100px 100px !important;
-    -moz-background-size: 100px 100px !important;
-    -o-background-size: 100px 100px !important;
-    background-size: 100px 100px !important;
-  }
-}
+// @media #{$retina}{
+//   .nav-toggle {
+//     background-image: url("../images/hamburger-retina.gif");
+//     -webkit-background-size: 100px 100px !important;
+//     -moz-background-size: 100px 100px !important;
+//     -o-background-size: 100px 100px !important;
+//     background-size: 100px 100px !important;
+//   }
+// }
 
 @media #{$medium-up}{
   .nav-toggle {
@@ -638,7 +639,7 @@ div#nav{
     border: none;
     border-radius: 0px;
     font-size: 2.0em;
-    background: url('http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/bedge_grunge.png');
+    background: url('/bedge_grunge.png');
     width: 100%;
     margin: 0 auto;
     color: $black;
@@ -648,7 +649,7 @@ div#nav{
     margin:0 auto;
     min-height: 0;
     &#the-intro{
-      background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-intro-mobile.jpg) no-repeat center top; 
+      background: url(#{$cloudfront}/the-intro-mobile.jpg) no-repeat center top; 
       min-height: 1000px;
       h1{
         color: $black;
@@ -657,7 +658,7 @@ div#nav{
         font-size: 1.0em;
         background: white;
         color: $black;
-        background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/blur.png");
+        background: url("#{$cloudfront}/blur.png");
         margin-top: 360px;
       }
     }
