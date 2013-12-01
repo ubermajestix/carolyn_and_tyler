@@ -495,7 +495,7 @@ div.guide {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .nav-toggle {
-    background-image: url("/images/hamburger-retina.gif");
+    background-image: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/hamburger-retina.gif");
     -webkit-background-size: 100px 100px !important;
     -moz-background-size: 100px 100px !important;
     -o-background-size: 100px 100px !important;
