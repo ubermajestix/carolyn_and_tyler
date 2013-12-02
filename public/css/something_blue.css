@@ -3,6 +3,26 @@
 /* 1025px, 1440px */
 /* 1441px, 1920px */
 /* 1921px */
+@font-face {
+  font-family: 'Thirsty Script Light';
+  src: url("/fonts/thirsty_script_light.eot");
+  src: url("/fonts/thirsty_script_light.eot?#iefix") format("embedded-opentype"), url("/fonts/thirsty_script_light.woff") format("woff"), url("web/fonts/thirsty_script_light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Voice Medium';
+  src: url("/fonts/voice_medium.eot");
+  src: url("/fonts/voice_medium.eot?#iefix") format("embedded-opentype"), url("/fonts/voice_medium.woff") format("woff"), url("web/fonts/voice_medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Sorren Ex Bold';
+  src: url("/fonts/sorren_ex_bold.eot");
+  src: url("/fonts/sorren_ex_bold.eot?#iefix") format("embedded-opentype"), url("/fonts/sorren_ex_bold.woff") format("woff"), url("web/fonts/sorren_ex_bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Sorren Ex Medium';
+  src: url("/fonts/sorren_ex_medium.eot");
+  src: url("/fonts/sorren_ex_medium.eot?#iefix") format("embedded-opentype"), url("/fonts/sorren_ex_medium.woff") format("woff"), url("web/fonts/sorren_ex_medium.ttf") format("truetype"); }
+
 body {
   margin: 0;
   padding: 0;
@@ -84,6 +104,9 @@ span.thirsty-push-3 {
 
 span.thirsty-push-4 {
   margin: 0 4px 0 0; }
+
+span.thirsty-push-5 {
+  margin: 0 5px 0 0; }
 
 span.thirsty-pull {
   margin: 0 -3px 0 0; }
@@ -235,10 +258,6 @@ button.btn-lg {
 div#the-proposal div#long-story, div#the-proposal div#short-story {
   display: none; }
 
-div#guide h2 {
-  font-size: 1.6em;
-  border-bottom: 1px solid #aaa; }
-
 div.guide {
   margin-bottom: 30px; }
   div.guide:before, div.guide:after {
@@ -246,6 +265,9 @@ div.guide {
     display: table; }
   div.guide:after {
     clear: both; }
+  div.guide h2 {
+    font-size: 1.6em;
+    border-bottom: 1px solid #aaa; }
   div.guide a.btn {
     font-family: 'Thirsty Script Light';
     font-weight: normal; }
@@ -551,7 +573,8 @@ div.guide {
       background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-intro-mobile.jpg) no-repeat center top;
       min-height: 1000px; }
       div.tile#the-intro h1 {
-        color: #333333; }
+        color: #333333;
+        font-size: 1.2em; }
       div.tile#the-intro div.info {
         font-size: 1.0em;
         background: white;
@@ -580,9 +603,6 @@ div.guide {
       div.tile#gallery .carousel {
         background: #333333; }
 
-  div#guide h2 {
-    border-bottom: 1px solid #aaa; }
-
   div.guide {
     margin-bottom: 100px; }
     div.guide:before, div.guide:after {
@@ -590,6 +610,9 @@ div.guide {
       display: table; }
     div.guide:after {
       clear: both; }
+    div.guide h2 {
+      font-size: 1.3em;
+      border-bottom: 1px solid #aaa; }
     div.guide h3.hint {
       color: #333333;
       font-size: 24pt; }
@@ -666,7 +689,7 @@ div.guide {
   div.tile {
     min-width: 0; }
     div.tile h1 {
-      font-size: 24pt; }
+      font-size: 1.5em; }
 
   div.guide {
     width: 100%; }
