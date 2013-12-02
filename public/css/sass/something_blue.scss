@@ -37,10 +37,10 @@ $cloudfront: "http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler";
   -webkit-transform: rotate($deg);
   -o-transform: rotate($deg);
 }
-body{ margin: 0; padding: 0;
+body{ 
+  margin: 0; 
+  padding: 0;
   color: #37302a;
-  // font-family: 'Voice Book';
-  // font-family: 'Voice Regular';
   font-family: 'Voice Medium';
   font-size: 14pt;
   line-height: 1.75;
@@ -305,6 +305,8 @@ div#retina-portrait{ display: none;}
 
 div#the-intro div.info{
   margin-top:300px;
+  border: none;
+  width: 100%;
 }
 
 p.hint{
@@ -688,7 +690,7 @@ div#nav{
       min-height: 1000px;
       h1{
         color: $black;
-        font-size: 1.2em;
+        font-size: 3.0em;
       }
       div.info{
         font-size: 1.0em;
@@ -825,6 +827,11 @@ div#nav{
           font-size: 2.0em;
         }
       }
+    }
+  }
+  #footer{
+    section.vendors{
+      float:left;
     }
   }
 }
