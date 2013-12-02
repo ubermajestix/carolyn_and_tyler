@@ -152,6 +152,9 @@ div#the-big-day ul li {
       margin: 0; }
     #footer section.vendors {
       float: right; }
+      #footer section.vendors button.btn-lg {
+        font-size: 1.2em;
+        color: #333333; }
     #footer section.made-by-the-groom img {
       margin: 10px auto; }
     #footer section.made-by-the-groom span {
@@ -627,7 +630,7 @@ div.guide {
         background: #333333; }
 
   div.guide {
-    margin-bottom: 100px; }
+    margin: 0 0 100px 0; }
     div.guide:before, div.guide:after {
       content: "";
       display: table; }
@@ -661,7 +664,7 @@ div.guide {
       position: absolute;
       width: 415px;
       height: 152px;
-      left: 24px;
+      left: 46px;
       top: -8px; }
     div.guide div.ribbon {
       width: 270px;
@@ -683,17 +686,20 @@ div.guide {
     div.guide span.glyphicon-phone-alt {
       margin-right: 10px; }
     div.guide ul {
+      margin: 0;
+      padding: 0;
       list-style: none; }
       div.guide ul li {
-        width: 430px; }
+        width: 454px;
+        margin: 0 10px 20px 0; }
         div.guide ul li > div {
           font-size: 2.0em;
           padding: 20px 20px 5px 20px;
           height: 825px; }
     div.guide.getting-there ul li {
-      width: 48%; }
+      width: auto; }
       div.guide.getting-there ul li > div {
-        height: 1535px;
+        height: auto;
         font-size: 2.0em; }
 
   #footer section.vendors {
