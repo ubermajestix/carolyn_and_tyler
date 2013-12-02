@@ -20,6 +20,10 @@ $cloudfront: "http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler";
   font-weight: normal;
 }
 
+@mixin voice-font{
+  font-family: 'Voice Medium';
+}
+
 @mixin clearfix {
   &:before, &:after {
     content:"";
@@ -124,19 +128,10 @@ div#the-intro{
     span{
       margin:0 2px;
     }
-    span.thirsty-push{
-      margin:0 2px 0 0;
-    }
-    span.thirsty-push-3{
-      margin:0 3px 0 0;
-    }
-    span.thirsty-push-4{
-      margin:0 4px 0 0;
-    }
-    span.thirsty-pull{
-      margin:0 -3px 0 0;
-    }
   }
+}
+span.thirsty-push-1{
+  margin:0 1px 0 0;
 }
 span.thirsty-push{
   margin:0 2px 0 0;
@@ -152,6 +147,9 @@ span.thirsty-push-5{
 }
 span.thirsty-pull{
   margin:0 -3px 0 0;
+}
+span.thirsty-pull-5{
+  margin:0 -5px 0 0;
 }
 
 div#the-big-day{
@@ -314,7 +312,12 @@ p.hint{
   display:none;
   small{ color: #999;} 
 }
-
+h3.hint{
+  @include sorren-font;
+  font-size: 1.5em;
+  margin: 0;
+  color: $black;
+}
 button.btn-lg{
   @include sorren-font;
   font-size: 24pt;
@@ -342,6 +345,10 @@ div.guide{
       color: $black;
       font-size: 1.5em;
     }
+  }
+  h4{ 
+    @include voice-font;
+    color: $white;
   }
   div.actions {
     position: absolute;
@@ -433,9 +440,7 @@ div.guide{
     ul li{
       width: 345px;
       > div{
-        // background:#244997;
-        // color: $white;
-        height: 535px;
+        height: 565px;
         font-size: 11pt;
       }
     }
@@ -669,6 +674,12 @@ div#nav{
   
   h1, h2, h3, h4, h5 { 
     @include thirsty-font;
+    color: $black;
+  }
+  h3.hint{
+    @include sorren-font;
+    font-size: 1.0em;
+    margin: 0;
     color: $black;
   }
   div.info{
@@ -921,9 +932,9 @@ div#nav{
       &:after{
         position: absolute;
         left: auto;
-        bottom: -13px;
-        right: 5px;
-        border-top: 10px solid #508395;
+        bottom: -15px;
+        right: 6px;
+        border-top: 7px solid #508395;
         border-right: 10px solid transparent;
       }
     }

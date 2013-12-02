@@ -89,6 +89,9 @@ function activerize($anchor){
 }
 if(is_mobile()){
   $('#nav li.pug').hide();
+  // $('body').click(function(){
+  //   $('#nav ul:visible').hide();
+  // })
 }
 $('div#nav ul a').bind('click',function(event){
   event.preventDefault();
