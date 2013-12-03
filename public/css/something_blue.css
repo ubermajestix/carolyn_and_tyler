@@ -1,6 +1,6 @@
 /* 0, 640px */
-/* 641px, 1024px */
-/* 1025px, 1440px */
+/* 641px, 960px */
+/* 960px, 1440px */
 /* 1441px, 1920px */
 /* 1921px */
 @font-face {
@@ -49,35 +49,14 @@ div#the-intro h1 {
   letter-spacing: 2pt; }
   div#the-intro h1 span {
     letter-spacing: 0;
-    margin: 0 -9px 0 -10px; }
+    margin: 0 -0.21em 0 -0.09em; }
     div#the-intro h1 span.space {
-      margin: 0 0px 0 20px; }
-  div#the-intro h1.tyler span.y {
-    margin: 0 -13px 0 -5px; }
-  div#the-intro h1.tyler span.l {
-    margin: 0 -5px 0 -10px; }
-  div#the-intro h1.tyler span.o {
-    margin: 0 -6px 0 -10px; }
-  div#the-intro h1.tyler span.n {
-    margin: 0 -13px 0 -10px; }
-  div#the-intro h1.tyler span.t {
-    margin: 0 -4px 0 -10px; }
-  div#the-intro h1.tyler span.r {
-    margin: 0 -11px 0 -8px; }
-  div#the-intro h1.carolyn span.o {
-    margin: 0 -13px 0 -10px; }
-  div#the-intro h1.carolyn span.l {
-    margin: 0 -3px 0 -10px; }
-  div#the-intro h1.carolyn span.n {
-    margin: 0 -13px 0 -10px; }
-  div#the-intro h1.carolyn span.i {
-    margin: 0 -4px 0 -10px; }
-  div#the-intro h1.carolyn span.r {
-    margin: 0 -6px 0 -8px; }
-  div#the-intro h1.carolyn span.s {
-    margin: 0 -14px 0 -10px; }
-  div#the-intro h1.carolyn span.t {
-    margin: 0 -5px 0 -10px; }
+      display: inline-block;
+      margin: 0 0 0 0; }
+    div#the-intro h1 span.t-pull {
+      margin-right: -0.30em; }
+    div#the-intro h1 span.t-push {
+      margin-right: -0.12em; }
 div#the-intro p {
   margin: 0;
   font-family: 'Thirsty Script Light';
@@ -85,49 +64,34 @@ div#the-intro p {
   text-align: center;
   font-size: 1.5em;
   line-height: 1.5; }
-  div#the-intro p span {
-    margin: 0 2px; }
 
-span.thirsty-push-1 {
-  margin: 0 1px 0 0; }
+span.t-push {
+  margin: 0 0.09em 0 0; }
 
-span.thirsty-push {
-  margin: 0 2px 0 0; }
+span.t-pull {
+  margin: 0 -0.10em 0 0; }
 
-span.thirsty-push-3 {
-  margin: 0 3px 0 0; }
-
-span.thirsty-push-4 {
-  margin: 0 4px 0 0; }
-
-span.thirsty-push-5 {
-  margin: 0 5px 0 0; }
-
-span.thirsty-pull {
-  margin: 0 -3px 0 0; }
-
-span.thirsty-pull-5 {
-  margin: 0 -5px 0 0; }
-
-div#the-big-day ul li {
-  padding: 10px;
-  display: block;
-  font-family: 'Sorren Ex Bold';
-  letter-spacing: 2pt;
-  line-height: 1;
-  font-weight: normal;
-  text-transform: uppercase;
-  font-size: 24pt;
-  line-height: 2; }
-  div#the-big-day ul li span.time {
-    display: inline-block;
-    min-width: 80px; }
-  div#the-big-day ul li img {
-    height: 40px;
-    width: 40px;
-    margin-right: 10px; }
-  div#the-big-day ul li i {
-    margin-right: 18px; }
+div#the-big-day ul {
+  list-style: none; }
+  div#the-big-day ul li {
+    padding: 10px;
+    display: block;
+    font-family: 'Sorren Ex Bold';
+    letter-spacing: 2pt;
+    line-height: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 24pt;
+    line-height: 2; }
+    div#the-big-day ul li span.time {
+      display: inline-block;
+      min-width: 80px; }
+    div#the-big-day ul li img {
+      height: 40px;
+      width: 40px;
+      margin-right: 10px; }
+    div#the-big-day ul li i {
+      margin-right: 18px; }
 
 #footer {
   background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/bedge_grunge.png");
@@ -151,7 +115,7 @@ div#the-big-day ul li {
     #footer section h2 {
       margin: 0; }
     #footer section.vendors {
-      float: right; }
+      float: left; }
       #footer section.vendors button.btn-lg {
         font-size: 1.2em;
         color: #333333; }
@@ -240,9 +204,7 @@ div#retina-portrait {
   display: none; }
 
 div#the-intro div.info {
-  margin-top: 300px;
-  border: none;
-  width: 100%; }
+  margin-top: 300px; }
 
 p.hint {
   text-align: center;
@@ -441,7 +403,7 @@ div.guide {
           height: 73px;
           display: block; }
 
-@media only screen and (min-width: 60.063em) {
+@media only screen and (min-width: 40.063em) {
   .nav-collapse {
     background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/blur.png");
     display: block;
@@ -513,6 +475,41 @@ div.guide {
               text-decoration: none; }
             .nav-collapse ul li.active a:focus {
               text-decoration: none; } }
+@media only screen and (min-width: 40.063em) and (max-width: 60em) {
+  body {
+    min-width: 641px; }
+
+  div.tile {
+    min-width: 557px; }
+
+  div#the-intro div.info {
+    border: none;
+    width: 100%; }
+
+  div.info {
+    width: 640px; }
+
+  div.guide.getting-there ul li {
+    width: auto; }
+    div.guide.getting-there ul li div {
+      height: auto; }
+
+  #footer section, #footer section.vendors {
+    width: 70%;
+    text-align: center;
+    float: none;
+    margin: 10px auto; }
+    #footer section span, #footer section.vendors span {
+      display: none; }
+
+  .nav-collapse {
+    min-width: 641px; }
+    .nav-collapse ul {
+      padding-top: 0; }
+      .nav-collapse ul li {
+        width: auto; }
+        .nav-collapse ul li a {
+          font-size: 1.6em; } }
 .nav-toggle {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
@@ -558,14 +555,14 @@ div.guide {
       -moz-transition: border-color 0.8s ease-out, color 0.4s ease-out;
       -o-transition: border-color 0.8s ease-out, color 0.4s ease-out;
       transition: border-color 0.8s ease-out, color 0.4s ease-out; } }
-@media only screen and (min-width: 60.063em) {
+@media only screen and (min-width: 40.063em) {
   .nav-toggle {
     display: none; } }
 /**************************************** Retina ****************************************/
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   div#retina {
     display: block; } }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (max-width: 60em), only screen and (max-device-width: 60em) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (max-width: 40em), only screen and (max-device-width: 40em), only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   h1, h2, h3, h4, h5 {
     font-family: 'Thirsty Script Light';
     font-weight: normal;
@@ -580,6 +577,14 @@ div.guide {
     font-size: 1.0em;
     margin: 0;
     color: #333333; }
+
+  div#the-intro h1 span {
+    margin: 0 -0.215em 0 -0.09em; }
+    div#the-intro h1 span.r-pull {
+      margin-left: -0.11em;
+      margin-right: -0.21em; }
+    div#the-intro h1 span.r-push {
+      margin-left: -0.095em; }
 
   div.info {
     border: none;
@@ -607,9 +612,6 @@ div.guide {
         color: #333333;
         background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/blur.png");
         margin-top: 360px; }
-        div.tile#the-intro div.info span.space {
-          display: inline-block;
-          margin: 0 0px 0 0px; }
     div.tile#the-couple {
       background: none; }
     div.tile#the-proposal {
@@ -706,7 +708,7 @@ div.guide {
   #footer section.vendors {
     float: left; } }
 /**************************************** Mobile-Web ****************************************/
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 40em) {
   div#mobile-web {
     display: block; }
 

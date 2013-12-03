@@ -66,56 +66,16 @@ div#the-intro{
     letter-spacing: 2pt;
     span{
       letter-spacing: 0;
-      margin:0 -9px 0 -10px;
+      margin:0 -0.21em 0 -0.09em;
       &.space{
-        margin:0 0px 0 20px;
+        display: inline-block;
+        margin: 0 0 0 0;
       }
-    }
-    &.tyler{
-      span{
-        &.y{
-          margin:0 -13px 0 -5px;
-        }
-        &.l{
-          margin:0 -5px 0 -10px;
-        }
-        &.o{
-          margin:0 -6px 0 -10px;
-        }
-        &.n{
-          margin:0 -13px 0 -10px;
-        }
-        &.t{
-          margin:0 -4px 0 -10px;
-        }
-        &.r{
-          margin:0 -11px 0 -8px;
-        }
+      &.t-pull{
+        margin-right: -0.30em;
       }
-    }
-    &.carolyn{
-      span{
-        &.o{
-          margin:0 -13px 0 -10px;
-        }
-        &.l{
-          margin:0 -3px 0 -10px;
-        }
-        &.n{
-          margin:0 -13px 0 -10px;
-        }
-        &.i{
-          margin:0 -4px 0 -10px;
-        }
-        &.r{
-          margin: 0 -6px 0 -8px;
-        }
-        &.s{
-          margin:0 -14px 0 -10px;
-        }
-        &.t{
-          margin:0 -5px 0 -10px;
-        }
+      &.t-push{
+        margin-right: -0.12em
       }
     }
   }
@@ -125,40 +85,20 @@ div#the-intro{
     text-align: center;
     font-size: 1.5em;
     line-height: 1.5;
-    span{
-      margin:0 2px;
-    }
   }
 }
-span.thirsty-push-1{
-  margin:0 1px 0 0;
+span.t-push{
+  margin:0 0.09em 0 0;
 }
-span.thirsty-push{
-  margin:0 2px 0 0;
-}
-span.thirsty-push-3{
-  margin:0 3px 0 0;
-}
-span.thirsty-push-4{
-  margin:0 4px 0 0;
-}
-span.thirsty-push-5{
-  margin:0 5px 0 0;
-}
-span.thirsty-pull{
-  margin:0 -3px 0 0;
-}
-span.thirsty-pull-5{
-  margin:0 -5px 0 0;
+span.t-pull{
+  margin:0 -0.10em 0 0;
 }
 
 div#the-big-day{
   ul{
-    // list-style: none;
+    list-style: none;
     li{
       padding: 10px;
-      // background: $black;
-      // color: $white;
       display: block;
       @include sorren-font;
       font-size: 24pt;
@@ -195,7 +135,7 @@ div#the-big-day{
     width: 480px;
     float: left;
     &.vendors{
-      float: right;
+      float: left;
       button.btn-lg{
       font-size: 1.2em;
       color: $black;
@@ -307,8 +247,6 @@ div#retina-portrait{ display: none;}
 
 div#the-intro div.info{
   margin-top:300px;
-  border: none;
-  width: 100%;
 }
 
 p.hint{
@@ -610,6 +548,49 @@ div#nav{
   }
 }
 }
+@media #{$medium-only}{
+  body {
+    min-width: 641px;
+  }
+  div.tile{
+    min-width: 557px;
+  }
+  div#the-intro div.info{
+    border: none;
+    width: 100%;
+  }
+  div.info{
+    width: 640px;
+  }
+  div.guide.getting-there ul li{
+    width: auto;
+    div{
+      height: auto;
+    }
+  }
+  #footer{
+   section, section.vendors{
+    width: 70%;
+    text-align: center;
+    float: none;
+    margin: 10px auto;
+    span{ display: none;}
+   }
+  }
+
+.nav-collapse{
+  min-width: 641px; 
+  ul {
+    padding-top: 0;
+    li { 
+      width: auto;
+      a{
+        font-size: 1.6em;
+      }
+    }
+  }
+}
+}
 
 .nav-toggle {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -674,7 +655,7 @@ div#nav{
 @media #{$retina}{
   div#retina{display: block;}
 }
-@media #{$retina}, #{$mobile-web} {
+@media #{$retina}, #{$mobile-web}, #{$ipad} {
   
   h1, h2, h3, h4, h5 { 
     @include thirsty-font;
@@ -685,6 +666,20 @@ div#nav{
     font-size: 1.0em;
     margin: 0;
     color: $black;
+  }
+  div#the-intro{
+    h1{ 
+      span{
+        margin:0 -0.215em 0 -0.09em;
+        &.r-pull{
+          margin-left: -0.11em;
+          margin-right: -0.21em;
+        }
+        &.r-push{
+          margin-left: -0.095em
+        }
+      }
+    }
   }
   div.info{
     border: none;
@@ -713,12 +708,6 @@ div#nav{
         color: $black;
         background: url("#{$cloudfront}/blur.png");
         margin-top: 360px;
-        span{
-          &.space{
-            display: inline-block;
-            margin:0 0px 0 0px;
-          }
-        }
       }
     }
     &#the-couple{

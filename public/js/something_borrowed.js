@@ -142,33 +142,33 @@ $(window).scroll(function(){
     }
     if(is_desktop()){
       // Shrink Nav
-      var speed = 500;  
-      if(small_nav === false && top_of_viewport >= intro_bottom){
-        small_nav = true;
-        setTimeout(function() {
-          $('div#nav li, div#nav ul, div#nav a').stop(true, true);
-          $('div#nav ul').animate({'padding-top': '0px'}, speed, function(){
-            $('div#nav li').css({height: '60px'});
-            $('div#nav li a').animate({'font-size': '1.4em'},speed, function(){
-              $('div#nav li:not(.pug)').css({width: '100px'});
-            });
-            $('div#nav li.pug').css({'padding-top': '7px', height:'41px'});
-            $('div#nav li.pug a').css({height:'53px'});
-          });
-        }, 800);
-      }
-      // Unshrink Nav
-      if(small_nav && top_of_viewport <= intro_bottom){
-        small_nav = false;
-        $('div#nav li, div#nav ul, div#nav li a').stop(true, true);
-        $('div#nav ul').animate({'padding-top': '22px'}, speed, function(){
-          $('div#nav li').css({height: '80px'});
-          $('div#nav li a').animate({'font-size': '2.4em'},900);
-          $('div#nav li:not(.pug)').css({width: '142px'});
-          $('div#nav li.pug').css({'padding-top': '16px', height:'60px'});
-          $('div#nav li.pug a').css({height: '66px'});
-        });
-      }
+      // var speed = 500;  
+      // if(small_nav === false && top_of_viewport >= intro_bottom){
+      //   small_nav = true;
+      //   setTimeout(function() {
+      //     $('div#nav li, div#nav ul, div#nav a').stop(true, true);
+      //     $('div#nav ul').animate({'padding-top': '0px'}, speed, function(){
+      //       $('div#nav li').css({height: '60px'});
+      //       $('div#nav li a').animate({'font-size': '1.4em'},speed, function(){
+      //         $('div#nav li:not(.pug)').css({width: '100px'});
+      //       });
+      //       $('div#nav li.pug').css({'padding-top': '7px', height:'41px'});
+      //       $('div#nav li.pug a').css({height:'53px'});
+      //     });
+      //   }, 800);
+      // }
+      // // Unshrink Nav
+      // if(small_nav && top_of_viewport <= intro_bottom){
+      //   small_nav = false;
+      //   $('div#nav li, div#nav ul, div#nav li a').stop(true, true);
+      //   $('div#nav ul').animate({'padding-top': '22px'}, speed, function(){
+      //     $('div#nav li').css({height: '80px'});
+      //     $('div#nav li a').animate({'font-size': '2.4em'},900);
+      //     $('div#nav li:not(.pug)').css({width: '142px'});
+      //     $('div#nav li.pug').css({'padding-top': '16px', height:'60px'});
+      //     $('div#nav li.pug a').css({height: '66px'});
+      //   });
+      // }
     }
     // This figures out where we are on the page and changes the nav
     // highlight as the user scrolls.  
