@@ -237,7 +237,7 @@ h3.hint {
   margin: 0;
   color: #333333; }
 
-button.btn-lg {
+button.btn-lg, a.btn-lg {
   font-family: 'Sorren Ex Bold';
   letter-spacing: 2pt;
   line-height: 1;

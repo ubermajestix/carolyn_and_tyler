@@ -278,7 +278,7 @@ h3.hint{
   margin: 0;
   color: $black;
 }
-button.btn-lg{
+button.btn-lg, a.btn-lg{
   @include sorren-font;
   font-size: 24pt;
 }
