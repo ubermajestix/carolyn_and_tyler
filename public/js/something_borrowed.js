@@ -121,9 +121,11 @@ $(window).resize(function(e){
     if(is_mobile()){
       $('#nav li.pug').hide();
       $('#nav ul').hide();
+      $('#custom-nav-toggle').show();
     }else{
       $('#nav li.pug').css({display: 'inline-block'});
       $('#nav ul').show();
+      $('#custom-nav-toggle').hide();
     }
   }
   mobile = is_mobile();

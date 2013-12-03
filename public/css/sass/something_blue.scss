@@ -322,16 +322,17 @@ div.guide{
     overflow: hidden;
     position: absolute;
     width: 215px;
-    height: 70px;
-    left: 19px;
+    height: 78px;
+    right: -4px;
     top: -2px;
+    // background: red;
   }
   div.ribbon{
     @include thirsty-font;
     position: absolute;
     width: 139px;
     height: 30px;
-    left: 113px;
+    left: 102px;
     top: 13px;
     @include rotate(35deg);
     background: #00b8de;
@@ -343,16 +344,16 @@ div.guide{
     &:before{
       content: "";
       position: absolute;
-      bottom: -4px;
+      bottom: -5px;
       left: -1px;
-      border: 2px solid;
+      border: 3px solid;
       border-color: #508395 transparent transparent transparent;
     }
     &:after{
       content: "";
       position: absolute;
-      bottom: -6px;
-      left: 114px;
+      bottom: -5px;
+      left: 127px;
       border: 3px solid;
       border-color: #508395 transparent transparent transparent;
     }
@@ -363,21 +364,27 @@ div.guide{
   }
   ul{
     list-style: none;
+    margin: 0;
+    padding: 0;
     li{
       display: inline-block;
       font-size: 10pt;
       background: none;
       color: $white;
-      margin: 5px;
-      width: 230px;
+      margin: 0 5px 5px 0;
+      width: 254px;
       vertical-align: top;
       > div{
         border-radius: 4px;
         padding: 10px;
         background: $black;
         color: #ddd;
-        height: 325px;
+        height: 385px;
         position: relative;
+        p{
+          font-size: 11pt;
+          margin: 8px 0 0 0;
+        }
       }
     }
   }
@@ -930,10 +937,14 @@ div#nav{
       &:after{
         position: absolute;
         left: auto;
-        bottom: -15px;
+        bottom: -10px;
         right: 6px;
-        border-top: 7px solid #508395;
+        width: 0;
+        height: 0;
+        border-top: 10px solid #508395;
         border-right: 10px solid transparent;
+        border-left: none;
+        border-bottom: none;
       }
     }
     &.getting-there{
