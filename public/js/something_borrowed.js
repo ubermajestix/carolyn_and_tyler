@@ -8,7 +8,6 @@ function is_retina(){
 function is_desktop(){
   return (!is_mobile() && !is_retina());
 }
-console.log(is_desktop(), is_mobile(), is_retina());
 $('.carousel').carousel({
   interval: 2000
 });
