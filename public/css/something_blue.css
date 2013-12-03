@@ -397,7 +397,6 @@ div.guide {
         font-size: 24pt;
         color: #333333; }
         .nav-collapse ul li a:focus {
-          background: #e59608;
           outline: none; }
       .nav-collapse ul li.active {
         border-bottom: 5px solid #e59608; }
