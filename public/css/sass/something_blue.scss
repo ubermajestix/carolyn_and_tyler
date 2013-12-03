@@ -241,7 +241,7 @@ div.info{
   border: #fff 15px solid;
   padding: 20px;
   text-align: center;
-  background: url("#{$cloudfront}/blur.png");
+  background: url("#{$cloudfront}/blur-2.png");
 }
 
 div#mobile-web, div#retina{ display: none;}
@@ -250,6 +250,7 @@ div#retina-portrait{ display: none;}
 
 div#the-intro div.info{
   margin-top:300px;
+  background: url("#{$cloudfront}/blur.png");
 }
 
 p.hint{
@@ -439,7 +440,7 @@ div#nav{
       width: 200px;
       border-bottom: 1px solid white;
       padding: 10px 10px 0 10px;
-      background: url("#{$cloudfront}/blur.png");
+      background: url("#{$cloudfront}/bedge_grunge.png");
       a {
         @include sorren-font;
         font-size: 24pt;
