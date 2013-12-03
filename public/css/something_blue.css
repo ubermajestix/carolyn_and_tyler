@@ -455,8 +455,9 @@ div.guide {
           -webkit-transition: border-color 0.8s ease-out, color 0.4s ease-out;
           -moz-transition: border-color 0.8s ease-out, color 0.4s ease-out;
           -o-transition: border-color 0.8s ease-out, color 0.4s ease-out;
-          transition: border-color 0.8s ease-out, color 0.4s ease-out; }
-          .nav-collapse ul li a:hover, .nav-collapse ul li a:focus {
+          transition: border-color 0.8s ease-out, color 0.4s ease-out;
+          text-decoration: none; }
+          .nav-collapse ul li a:hover {
             text-decoration: none;
             -webkit-font-smoothing: antialiased;
             color: #e59608;

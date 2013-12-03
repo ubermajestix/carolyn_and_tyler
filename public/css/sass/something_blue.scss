@@ -509,7 +509,8 @@ div#nav{
         -moz-transition: $nav_transition;
         -o-transition: $nav_transition;
         transition: $nav_transition;
-        &:hover, &:focus {
+        text-decoration: none;
+        &:hover{
           text-decoration: none;
           -webkit-font-smoothing: antialiased;
           color: $orange;
