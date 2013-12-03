@@ -180,6 +180,16 @@ div.tile {
     background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/guide.jpg) no-repeat center top fixed; }
   div.tile#the-registry {
     background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-registry.jpg) no-repeat center top fixed; }
+    div.tile#the-registry div.registry {
+      border-bottom: 1px solid #aaaaaa;
+      margin-bottom: 20px;
+      padding-bottom: 20px; }
+      div.tile#the-registry div.registry:last-child {
+        border: none; }
+      div.tile#the-registry div.registry p {
+        margin: 10px auto;
+        text-align: center;
+        width: 475px; }
   div.tile#gallery {
     display: none;
     background: #333333; }
@@ -248,7 +258,7 @@ div.guide {
     clear: both; }
   div.guide h2 {
     font-size: 1.6em;
-    border-bottom: 1px solid #aaa; }
+    border-bottom: 1px solid #aaaaaa; }
   div.guide a.btn {
     font-family: 'Thirsty Script Light';
     font-weight: normal; }
@@ -507,6 +517,9 @@ div.guide {
     width: auto; }
     div.guide.getting-there ul li div {
       height: auto; }
+
+  div.guide ul li {
+    width: 277px; }
 
   #footer section, #footer section.vendors {
     width: 70%;
