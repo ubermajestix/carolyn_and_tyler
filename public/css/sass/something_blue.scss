@@ -13,6 +13,7 @@ $cloudfront: "http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler";
   line-height: 1;
   font-weight: normal;
   text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
 }
 
 @mixin thirsty-font{
@@ -22,6 +23,7 @@ $cloudfront: "http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler";
 
 @mixin voice-font{
   font-family: 'Voice Medium';
+  -webkit-font-smoothing: antialiased;
 }
 
 @mixin clearfix {
@@ -45,7 +47,7 @@ body{
   margin: 0; 
   padding: 0;
   color: #37302a;
-  font-family: 'Voice Medium';
+  @include voice-font;
   font-size: 14pt;
   line-height: 1.75;
 }
@@ -200,6 +202,7 @@ div.tile{
   background-size: cover;
   &#the-intro{
     background: url(#{$cloudfront}/the-intro.jpg) no-repeat center top fixed; 
+    border-top: 1px solid $white;
   }
   &#the-couple{
     background: url(#{$cloudfront}/the-couple.jpg) no-repeat center top fixed; 
@@ -311,9 +314,9 @@ div.guide{
     }
   }
   div.popover{
-    font-family: "Voice Medium";
+    @include voice-font;
     color: $black;
-    width: 124px;
+    width: 143px;
   }
   div.ribbon-wrap{
     overflow: hidden;
@@ -462,7 +465,7 @@ div#nav{
 
 @media #{$medium-up}{
 .nav-collapse{
-  background: url("#{$cloudfront}/blur.png");
+  background: $white;
   display: block;
   width: 100%;
   min-width: 960px; 
@@ -473,7 +476,6 @@ div#nav{
   ul {
     position: relative;
     text-align: center;
-    padding-top: 22px;
     display: block;
     width: 100%;
     li { 

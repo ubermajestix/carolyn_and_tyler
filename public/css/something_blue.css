@@ -28,6 +28,7 @@ body {
   padding: 0;
   color: #37302a;
   font-family: 'Voice Medium';
+  -webkit-font-smoothing: antialiased;
   font-size: 14pt;
   line-height: 1.75; }
 
@@ -81,6 +82,7 @@ div#the-big-day ul {
     line-height: 1;
     font-weight: normal;
     text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
     font-size: 24pt;
     line-height: 2; }
     div#the-big-day ul li span.time {
@@ -164,7 +166,8 @@ div.tile {
   border-top: 2px solid #eeeeee;
   background-size: cover; }
   div.tile#the-intro {
-    background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-intro.jpg) no-repeat center top fixed; }
+    background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-intro.jpg) no-repeat center top fixed;
+    border-top: 1px solid #eeeeee; }
   div.tile#the-couple {
     background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-couple.jpg) no-repeat center top fixed; }
   div.tile#the-proposal {
@@ -218,6 +221,7 @@ h3.hint {
   line-height: 1;
   font-weight: normal;
   text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
   font-size: 1.5em;
   margin: 0;
   color: #333333; }
@@ -228,6 +232,7 @@ button.btn-lg {
   line-height: 1;
   font-weight: normal;
   text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
   font-size: 24pt; }
 
 div#the-proposal div#long-story, div#the-proposal div#short-story {
@@ -252,6 +257,7 @@ div.guide {
     line-height: 1;
     font-weight: normal;
     text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
     font-size: 2.2em;
     color: #eeeeee;
     margin: 0; }
@@ -260,6 +266,7 @@ div.guide {
       font-size: 1.5em; }
   div.guide h4 {
     font-family: 'Voice Medium';
+    -webkit-font-smoothing: antialiased;
     color: #eeeeee; }
   div.guide div.actions {
     position: absolute;
@@ -276,9 +283,10 @@ div.guide {
     div.guide div.actions.more a {
       width: 126px; }
   div.guide div.popover {
-    font-family: "Voice Medium";
+    font-family: 'Voice Medium';
+    -webkit-font-smoothing: antialiased;
     color: #333333;
-    width: 124px; }
+    width: 143px; }
   div.guide div.ribbon-wrap {
     overflow: hidden;
     position: absolute;
@@ -385,6 +393,7 @@ div.guide {
         line-height: 1;
         font-weight: normal;
         text-transform: uppercase;
+        -webkit-font-smoothing: antialiased;
         font-size: 24pt;
         color: #333333; }
         .nav-collapse ul li a:focus {
@@ -405,7 +414,7 @@ div.guide {
 
 @media only screen and (min-width: 40.063em) {
   .nav-collapse {
-    background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/blur.png");
+    background: #eeeeee;
     display: block;
     width: 100%;
     min-width: 960px;
@@ -416,7 +425,6 @@ div.guide {
     .nav-collapse ul {
       position: relative;
       text-align: center;
-      padding-top: 22px;
       display: block;
       width: 100%; }
       .nav-collapse ul li {
@@ -574,6 +582,7 @@ div.guide {
     line-height: 1;
     font-weight: normal;
     text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
     font-size: 1.0em;
     margin: 0;
     color: #333333; }
