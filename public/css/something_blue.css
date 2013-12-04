@@ -146,11 +146,21 @@ div#the-big-day ul {
     #footer ul li {
       margin: 10px 0 0 0; }
   #footer div.tiny {
+    font-family: 'Sorren Ex Bold';
+    letter-spacing: 2pt;
+    line-height: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
     clear: both;
     color: #999;
-    font-size: 10pt;
+    font-size: 16pt;
+    line-height: 24pt;
     border-top: 1px solid #bbb;
     padding: 0; }
+    #footer div.tiny a {
+      font-size: 16pt;
+      line-height: 24pt; }
     #footer div.tiny a {
       color: #999; }
     #footer div.tiny ul {
@@ -529,11 +539,15 @@ div.guide {
     width: 277px; }
 
   #footer section, #footer section.vendors {
-    width: 310px;
+    width: 320px;
     line-height: 1;
     text-align: left;
     float: left;
     margin: 10px auto; }
+    #footer section h2, #footer section.vendors h2 {
+      font-size: 1.6em; }
+    #footer section a, #footer section.vendors a {
+      font-size: 0.9em; }
     #footer section.made-by-the-groom span, #footer section.vendors.made-by-the-groom span {
       position: relative;
       width: auto;
