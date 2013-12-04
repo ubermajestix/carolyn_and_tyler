@@ -128,6 +128,11 @@ div#the-big-day{
     font-weight: normal;
     text-transform: uppercase;
   }
+  a{
+    color: $black;
+    @include sorren-font;
+    font-size: 1.2em;
+  }
   i.glyphicon{
     margin: 0 10px 0 0;
   }

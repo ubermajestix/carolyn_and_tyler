@@ -103,6 +103,15 @@ div#the-big-day ul {
     letter-spacing: 2pt;
     font-weight: normal;
     text-transform: uppercase; }
+  #footer a {
+    color: #333333;
+    font-family: 'Sorren Ex Bold';
+    letter-spacing: 2pt;
+    line-height: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.2em; }
   #footer i.glyphicon {
     margin: 0 10px 0 0; }
   #footer:before, #footer:after {
