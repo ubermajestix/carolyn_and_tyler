@@ -1,0 +1,12 @@
+html body h1, html body h2, html body h3 {
+  font-size: 4.0em; }
+html body h3.hint {
+  font-size: 3.0em; }
+html body p {
+  font-size: 2.0em; }
+html body #nav ul li a {
+  font-size: 4.0em; }
+html body #the-intro h1 {
+  font-size: 4.0em; }
+html body #the-intro p {
+  font-size: 2.5em; }

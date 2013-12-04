@@ -454,8 +454,6 @@ div.guide {
       .nav-collapse ul li {
         float: none;
         display: inline-block;
-        *display: block;
-        *float: left;
         width: 142px;
         margin: 0;
         padding: 0;
