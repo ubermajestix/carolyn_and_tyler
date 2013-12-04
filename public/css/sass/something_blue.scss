@@ -1,12 +1,12 @@
-@import 'foundation';
-@import 'fonts';
-
 $orange: #E59608;
 $green: #638D4E;
 $black: #333;
 $grey: #aaa;
 $white: #eee;
 $cloudfront: "http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler";
+
+@import 'foundation';
+@import 'fonts';
 
 @mixin sorren-font{
   font-family: 'Sorren Ex Bold';
