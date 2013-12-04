@@ -404,7 +404,7 @@ div.guide{
   }
   &.getting-there{
     ul li{
-      width: 345px;
+      width: 387px;
       > div{
         height: 565px;
         font-size: 11pt;
@@ -596,11 +596,18 @@ div#nav{
   }
   #footer{
    section, section.vendors{
-    width: 70%;
-    text-align: center;
-    float: none;
+    width: 310px;
+    line-height: 1;
+    text-align: left;
+    float: left;
     margin: 10px auto;
-    span{ display: none;}
+    &.made-by-the-groom{
+      span{ 
+        position: relative;
+        width: auto;
+        margin: 0;
+      }
+    }
    }
   }
 

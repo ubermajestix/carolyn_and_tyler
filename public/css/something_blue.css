@@ -363,7 +363,7 @@ div.guide {
           font-size: 11pt;
           margin: 8px 0 0 0; }
   div.guide.getting-there ul li {
-    width: 345px; }
+    width: 387px; }
     div.guide.getting-there ul li > div {
       height: 565px;
       font-size: 11pt; }
@@ -522,12 +522,15 @@ div.guide {
     width: 277px; }
 
   #footer section, #footer section.vendors {
-    width: 70%;
-    text-align: center;
-    float: none;
+    width: 310px;
+    line-height: 1;
+    text-align: left;
+    float: left;
     margin: 10px auto; }
-    #footer section span, #footer section.vendors span {
-      display: none; }
+    #footer section.made-by-the-groom span, #footer section.vendors.made-by-the-groom span {
+      position: relative;
+      width: auto;
+      margin: 0; }
 
   .nav-collapse {
     min-width: 641px; }
