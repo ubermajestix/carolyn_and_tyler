@@ -1,6 +1,4 @@
-// @font-face{
-//   font-family: 'Thirsty Script Bold';
-//   src:url('/fonts/thirsty_script_bold.woff')format("woff");}
+$cloudfront: "http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler";
 @font-face {font-family: 'Thirsty Script Light';
   src:url('#{$cloudfront}/fonts/thirsty_script_light.eot');
   src: url('#{$cloudfront}/fonts/thirsty_script_light.eot?#iefix')format('embedded-opentype'),

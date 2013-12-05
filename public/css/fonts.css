@@ -1,78 +1,19 @@
-/*
-Syntax error: Undefined variable: "$cloudfront".
-        on line 5 of ./public/css/sass/fonts.scss
+@font-face {
+  font-family: 'Thirsty Script Light';
+  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/thirsty_script_light.eot");
+  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/thirsty_script_light.eot?#iefix") format("embedded-opentype"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/thirsty_script_light.woff") format("woff"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/thirsty_script_light.ttf") format("truetype"); }
 
-1: // @font-face{
-2: //   font-family: 'Thirsty Script Bold';
-3: //   src:url('/fonts/thirsty_script_bold.woff')format("woff");}
-4: @font-face {font-family: 'Thirsty Script Light';
-5:   src:url('#{$cloudfront}/fonts/thirsty_script_light.eot');
-6:   src: url('#{$cloudfront}/fonts/thirsty_script_light.eot?#iefix')format('embedded-opentype'),
-7:   url('#{$cloudfront}/fonts/thirsty_script_light.woff')format('woff'),
-8:   url('#{$cloudfront}/fonts/thirsty_script_light.ttf') format('truetype');}
-9: @font-face {font-family: 'Voice Medium';
-10:   src:url('#{$cloudfront}/fonts/voice_medium.eot');
+@font-face {
+  font-family: 'Voice Medium';
+  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/voice_medium.eot");
+  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/voice_medium.eot?#iefix") format("embedded-opentype"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/voice_medium.woff") format("woff"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/voice_medium.ttf") format("truetype"); }
 
-Backtrace:
-./public/css/sass/fonts.scss:5
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/script/variable.rb:49:in `_perform'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/script/node.rb:40:in `perform'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/script/string_interpolation.rb:82:in `_perform'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/script/node.rb:40:in `perform'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/script/funcall.rb:99:in `block in _perform'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/script/funcall.rb:99:in `map'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/script/funcall.rb:99:in `_perform'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/script/node.rb:40:in `perform'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:356:in `visit_directive'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/tree/root_node.rb:20:in `render'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/engine.rb:315:in `_render'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/engine.rb:262:in `render'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:201:in `each'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/plugin.rb:81:in `update_stylesheets'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/plugin.rb:54:in `check_for_updates'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/sass-3.2.9/lib/sass/plugin/rack.rb:51:in `call'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/shotgun-0.9/lib/shotgun/loader.rb:86:in `proceed_as_child'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/shotgun-0.9/lib/shotgun/loader.rb:31:in `call!'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/shotgun-0.9/lib/shotgun/loader.rb:18:in `call'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/shotgun-0.9/lib/shotgun/favicon.rb:12:in `call'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/shotgun-0.9/lib/shotgun/static.rb:14:in `call'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/rack-1.5.2/lib/rack/builder.rb:138:in `call'
-/Users/TylerMontgomery/Dropbox/tm_apps/carolyn_and_tyler/.bundle/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
-/opt/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
-/opt/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
-/opt/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$cloudfront\".\A         on line 5 of ./public/css/sass/fonts.scss\A \A 1: // @font-face{\A 2: //   font-family: 'Thirsty Script Bold';\A 3: //   src:url('/fonts/thirsty_script_bold.woff')format(\"woff\");}\A 4: @font-face {font-family: 'Thirsty Script Light';\A 5:   src:url('#{$cloudfront}/fonts/thirsty_script_light.eot');\A 6:   src: url('#{$cloudfront}/fonts/thirsty_script_light.eot?#iefix')format('embedded-opentype'),\A 7:   url('#{$cloudfront}/fonts/thirsty_script_light.woff')format('woff'),\A 8:   url('#{$cloudfront}/fonts/thirsty_script_light.ttf') format('truetype');}\A 9: @font-face {font-family: 'Voice Medium';\A 10:   src:url('#{$cloudfront}/fonts/voice_medium.eot');"; }
+@font-face {
+  font-family: 'Sorren Ex Bold';
+  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_bold.eot");
+  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_bold.eot?#iefix") format("embedded-opentype"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_bold.woff") format("woff"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Sorren Ex Medium';
+  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.eot");
+  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.eot?#iefix") format("embedded-opentype"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.woff") format("woff"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.ttf") format("truetype"); }
