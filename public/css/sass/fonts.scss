@@ -1,34 +1,33 @@
-$cloudfront: "http://assets.carolynandtyler.com/carolynandtyler";
 @font-face {
   font-family: 'Thirsty Script Light';
-  src:url('#{$cloudfront}/fonts/thirsty_script_light.eot');
-  src: url('#{$cloudfront}/fonts/thirsty_script_light.eot?#iefix') format('embedded-opentype'),
-       url('#{$cloudfront}/fonts/thirsty_script_light.woff')format('woff'),
-       url('#{$cloudfront}/fonts/thirsty_script_light.ttf') format('truetype');
+  src:url('/fonts/thirsty_script_light.eot');
+  src: url('/fonts/thirsty_script_light.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/thirsty_script_light.woff')format('woff'),
+       url('/fonts/thirsty_script_light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {font-family: 'Voice Medium';
-  src: url('#{$cloudfront}/fonts/voice_medium.eot');
-  src: url('#{$cloudfront}/fonts/voice_medium.eot?#iefix') format('embedded-opentype'),
-       url('#{$cloudfront}/fonts/voice_medium.woff') format('woff'),
-       url('#{$cloudfront}/fonts/voice_medium.ttf') format('truetype');
+  src: url('/fonts/voice_medium.eot');
+  src: url('/fonts/voice_medium.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/voice_medium.woff') format('woff'),
+       url('/fonts/voice_medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {font-family: 'Sorren Ex Bold';
-  src: url('#{$cloudfront}/fonts/sorren_ex_bold.eot');
-  src: url('#{$cloudfront}/fonts/sorren_ex_bold.eot?#iefix') format('embedded-opentype'),
-       url('#{$cloudfront}/fonts/sorren_ex_bold.woff') format('woff'),
-       url('#{$cloudfront}/fonts/sorren_ex_bold.ttf') format('truetype');
+  src: url('/fonts/sorren_ex_bold.eot');
+  src: url('/fonts/sorren_ex_bold.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/sorren_ex_bold.woff') format('woff'),
+       url('/fonts/sorren_ex_bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {font-family: 'Sorren Ex Medium';
-  src: url('#{$cloudfront}/fonts/sorren_ex_medium.eot');
-  src: url('#{$cloudfront}/fonts/sorren_ex_medium.eot?#iefix') format('embedded-opentype'),
-       url('#{$cloudfront}/fonts/sorren_ex_medium.woff') format('woff'),
-       url('#{$cloudfront}/fonts/sorren_ex_medium.ttf') format('truetype');
+  src: url('/fonts/sorren_ex_medium.eot');
+  src: url('/fonts/sorren_ex_medium.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/sorren_ex_medium.woff') format('woff'),
+       url('/fonts/sorren_ex_medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
