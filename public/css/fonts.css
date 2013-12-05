@@ -16,4 +16,18 @@
 @font-face {
   font-family: 'Sorren Ex Medium';
   src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.eot");
-  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.eot?#iefix") format("embedded-opentype"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.woff") format("woff"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.ttf") format("truetype"); }
+  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.eot?#iefix") format("embedded-opentype"), 
+       url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.woff") format("woff"), 
+       url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.ttf") format("truetype"); 
+     
+     }
+  @font-face {
+    font-family: "LCD";
+    src: url('/Public/Fonts/quartz_regular-webfont.eot');
+    src: url('/Public/Fonts/quartz_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/Public/Fonts/quartz_regular-webfont.woff') format('woff'),
+         url('/Public/Fonts/quartz_regular-webfont.ttf') format('truetype'),
+         url('/Public/Fonts/quartz_regular-webfont.svg#quartzregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

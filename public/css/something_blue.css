@@ -6,22 +6,30 @@
 @font-face {
   font-family: 'Thirsty Script Light';
   src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/thirsty_script_light.eot");
-  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/thirsty_script_light.eot?#iefix") format("embedded-opentype"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/thirsty_script_light.woff") format("woff"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/thirsty_script_light.ttf") format("truetype"); }
+  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/thirsty_script_light.eot?#iefix") format("embedded-opentype"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/thirsty_script_light.woff") format("woff"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/thirsty_script_light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
   font-family: 'Voice Medium';
   src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/voice_medium.eot");
-  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/voice_medium.eot?#iefix") format("embedded-opentype"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/voice_medium.woff") format("woff"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/voice_medium.ttf") format("truetype"); }
+  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/voice_medium.eot?#iefix") format("embedded-opentype"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/voice_medium.woff") format("woff"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/voice_medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
   font-family: 'Sorren Ex Bold';
   src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_bold.eot");
-  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_bold.eot?#iefix") format("embedded-opentype"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_bold.woff") format("woff"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_bold.ttf") format("truetype"); }
+  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_bold.eot?#iefix") format("embedded-opentype"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_bold.woff") format("woff"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
   font-family: 'Sorren Ex Medium';
   src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.eot");
-  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.eot?#iefix") format("embedded-opentype"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.woff") format("woff"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.ttf") format("truetype"); }
+  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.eot?#iefix") format("embedded-opentype"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.woff") format("woff"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
 body {
   margin: 0;
