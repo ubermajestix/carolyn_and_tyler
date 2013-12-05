@@ -5,29 +5,29 @@
 /* 1921px */
 @font-face {
   font-family: 'Thirsty Script Light';
-  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/thirsty_script_light.eot");
-  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/thirsty_script_light.eot?#iefix") format("embedded-opentype"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/thirsty_script_light.woff") format("woff"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/thirsty_script_light.ttf") format("truetype");
+  src: url("http://assets.carolynandtyler.com/carolynandtyler/fonts/thirsty_script_light.eot");
+  src: url("http://assets.carolynandtyler.com/carolynandtyler/fonts/thirsty_script_light.eot?#iefix") format("embedded-opentype"), url("http://assets.carolynandtyler.com/carolynandtyler/fonts/thirsty_script_light.woff") format("woff"), url("http://assets.carolynandtyler.com/carolynandtyler/fonts/thirsty_script_light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Voice Medium';
-  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/voice_medium.eot");
-  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/voice_medium.eot?#iefix") format("embedded-opentype"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/voice_medium.woff") format("woff"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/voice_medium.ttf") format("truetype");
+  src: url("http://assets.carolynandtyler.com/carolynandtyler/fonts/voice_medium.eot");
+  src: url("http://assets.carolynandtyler.com/carolynandtyler/fonts/voice_medium.eot?#iefix") format("embedded-opentype"), url("http://assets.carolynandtyler.com/carolynandtyler/fonts/voice_medium.woff") format("woff"), url("http://assets.carolynandtyler.com/carolynandtyler/fonts/voice_medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Sorren Ex Bold';
-  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_bold.eot");
-  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_bold.eot?#iefix") format("embedded-opentype"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_bold.woff") format("woff"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_bold.ttf") format("truetype");
+  src: url("http://assets.carolynandtyler.com/carolynandtyler/fonts/sorren_ex_bold.eot");
+  src: url("http://assets.carolynandtyler.com/carolynandtyler/fonts/sorren_ex_bold.eot?#iefix") format("embedded-opentype"), url("http://assets.carolynandtyler.com/carolynandtyler/fonts/sorren_ex_bold.woff") format("woff"), url("http://assets.carolynandtyler.com/carolynandtyler/fonts/sorren_ex_bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Sorren Ex Medium';
-  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.eot");
-  src: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.eot?#iefix") format("embedded-opentype"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.woff") format("woff"), url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/fonts/sorren_ex_medium.ttf") format("truetype");
+  src: url("http://assets.carolynandtyler.com/carolynandtyler/fonts/sorren_ex_medium.eot");
+  src: url("http://assets.carolynandtyler.com/carolynandtyler/fonts/sorren_ex_medium.eot?#iefix") format("embedded-opentype"), url("http://assets.carolynandtyler.com/carolynandtyler/fonts/sorren_ex_medium.woff") format("woff"), url("http://assets.carolynandtyler.com/carolynandtyler/fonts/sorren_ex_medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -104,7 +104,7 @@ div#the-big-day ul {
       margin-right: 18px; }
 
 #footer {
-  background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/bedge_grunge.png");
+  background: url("http://assets.carolynandtyler.com/carolynandtyler/bedge_grunge.png");
   margin: 0; }
   #footer h1, #footer h2, #footer h3 {
     font-family: 'Sorren Ex Medium';
@@ -193,20 +193,20 @@ div.tile {
   border-top: 2px solid #eeeeee;
   background-size: cover; }
   div.tile#the-intro {
-    background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-intro.jpg) no-repeat center top fixed;
+    background: url(http://assets.carolynandtyler.com/carolynandtyler/the-intro.jpg) no-repeat center top fixed;
     border-top: 1px solid #eeeeee; }
   div.tile#the-couple {
-    background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-couple.jpg) no-repeat center top fixed; }
+    background: url(http://assets.carolynandtyler.com/carolynandtyler/the-couple.jpg) no-repeat center top fixed; }
   div.tile#the-proposal {
-    background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-proposal.jpg) no-repeat center top fixed; }
+    background: url(http://assets.carolynandtyler.com/carolynandtyler/the-proposal.jpg) no-repeat center top fixed; }
   div.tile#the-big-day {
-    background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-big-day.jpg) no-repeat center center fixed; }
+    background: url(http://assets.carolynandtyler.com/carolynandtyler/the-big-day.jpg) no-repeat center center fixed; }
   div.tile#travel {
-    background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/travel.jpg) no-repeat center top fixed; }
+    background: url(http://assets.carolynandtyler.com/carolynandtyler/travel.jpg) no-repeat center top fixed; }
   div.tile#guide {
-    background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/guide.jpg) no-repeat center top fixed; }
+    background: url(http://assets.carolynandtyler.com/carolynandtyler/guide.jpg) no-repeat center top fixed; }
   div.tile#the-registry {
-    background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-registry.jpg) no-repeat center top fixed; }
+    background: url(http://assets.carolynandtyler.com/carolynandtyler/the-registry.jpg) no-repeat center top fixed; }
     div.tile#the-registry div.registry {
       border-bottom: 1px solid #aaaaaa;
       margin-bottom: 20px;
@@ -232,7 +232,7 @@ div.info {
   border: #fff 15px solid;
   padding: 20px;
   text-align: center;
-  background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/blur-2.png"); }
+  background: url("http://assets.carolynandtyler.com/carolynandtyler/blur-2.png"); }
 
 div#mobile-web, div#retina {
   display: none; }
@@ -245,7 +245,7 @@ div#retina-portrait {
 
 div#the-intro div.info {
   margin-top: 300px;
-  background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/blur.png"); }
+  background: url("http://assets.carolynandtyler.com/carolynandtyler/blur.png"); }
 
 p.hint {
   text-align: center;
@@ -429,7 +429,7 @@ div.guide {
       width: 200px;
       border-bottom: 1px solid white;
       padding: 10px 10px 0 10px;
-      background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/bedge_grunge.png"); }
+      background: url("http://assets.carolynandtyler.com/carolynandtyler/bedge_grunge.png"); }
       .nav-collapse ul li a {
         font-family: 'Sorren Ex Bold';
         letter-spacing: 2pt;
@@ -449,7 +449,7 @@ div.guide {
       .nav-collapse ul li.pug {
         height: 73px; }
         .nav-collapse ul li.pug a {
-          background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/pug-icon.png") no-repeat;
+          background: url("http://assets.carolynandtyler.com/carolynandtyler/pug-icon.png") no-repeat;
           width: 60px;
           height: 73px;
           display: block; }
@@ -509,7 +509,7 @@ div.guide {
           padding-top: 16px; }
           .nav-collapse ul li.pug a {
             z-index: 1000;
-            background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/pug-icon.png") no-repeat;
+            background: url("http://assets.carolynandtyler.com/carolynandtyler/pug-icon.png") no-repeat;
             width: 60px;
             height: 66px;
             padding-bottom: 20px; }
@@ -585,11 +585,11 @@ div.guide {
   float: right;
   right: 0px;
   text-indent: -9999px;
-  background: #cbc7bf url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/hamburger.gif") no-repeat 50% 45%; }
+  background: #cbc7bf url("http://assets.carolynandtyler.com/carolynandtyler/hamburger.gif") no-repeat 50% 45%; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .nav-toggle {
-    background-image: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/hamburger-retina.gif");
+    background-image: url("http://assets.carolynandtyler.com/carolynandtyler/hamburger-retina.gif");
     -webkit-background-size: 100px 100px !important;
     -moz-background-size: 100px 100px !important;
     -o-background-size: 100px 100px !important;
@@ -650,7 +650,7 @@ div.guide {
     border: none;
     border-radius: 0px;
     font-size: 2.0em;
-    background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/bedge_grunge.png");
+    background: url("http://assets.carolynandtyler.com/carolynandtyler/bedge_grunge.png");
     width: 100%;
     margin: 0 auto;
     color: #333333; }
@@ -661,7 +661,7 @@ div.guide {
     min-height: 0;
     border-width: 10px; }
     div.tile#the-intro {
-      background: url(http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/the-intro-mobile.jpg) no-repeat center top;
+      background: url(http://assets.carolynandtyler.com/carolynandtyler/the-intro-mobile.jpg) no-repeat center top;
       min-height: 1000px; }
       div.tile#the-intro h1 {
         color: #333333;
@@ -670,7 +670,7 @@ div.guide {
         font-size: 1.0em;
         background: white;
         color: #333333;
-        background: url("http://d22oiu9iz2vanq.cloudfront.net/carolynandtyler/blur.png");
+        background: url("http://assets.carolynandtyler.com/carolynandtyler/blur.png");
         margin-top: 360px; }
     div.tile#the-couple {
       background: none; }
