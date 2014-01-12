@@ -122,6 +122,7 @@ div#the-big-day{
 #footer{
   background: url("#{$cloudfront}/bedge_grunge.png");
   margin: 0;
+  div.container{ min-width: 960px; margin: 0 auto;}
   h1, h2, h3{
     font-family: 'Sorren Ex Medium';
     letter-spacing: 2pt;
@@ -138,10 +139,14 @@ div#the-big-day{
   }
   @include clearfix;
   section{
+    &.contact-us{
+      // border-bottom: 1px solid #aaa;
+    }
     h2{ margin: 0; }
     padding: 20px;
-    width: 480px;
+    // width: 400px;
     float: left;
+    margin: 0 20px;
     &.vendors{
       float: left;
       button.btn-lg{
@@ -261,7 +266,7 @@ div.tile{
 }
 div.info{
   width: 860px;
-  margin: 200px auto 800px auto;
+  margin: 400px auto 800px auto;
   border-radius: 8px;
   border: #fff 15px solid;
   padding: 20px;
@@ -604,6 +609,7 @@ div#nav{
     width: 277px;
   }
   #footer{
+   div.container{min-width: 630px;}
    section, section.vendors{
     width: 320px;
     line-height: 1;
@@ -611,10 +617,15 @@ div#nav{
     float: left;
     margin: 10px auto;
     h2{
-      font-size: 1.6em;
+      font-size: 1.5em;
     }
     a{
       font-size: 0.9em;
+    }
+    &.contact-us{ 
+      a{
+        font-size: 1.5em;
+      }
     }
     &.made-by-the-groom{
       span{ 
@@ -886,6 +897,9 @@ div#nav{
     }
   }
   #footer{
+    div.container{
+      min-width: 0; 
+    }
     section.vendors{
       float:left;
     }

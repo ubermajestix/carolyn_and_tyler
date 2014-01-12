@@ -49,7 +49,6 @@ $('#custom-nav-toggle').click(function(e){
   $('.nav-collapse ul').show();
   $(this).hide();
   e.preventDefault();
-  return false;
 });
 
 if(is_mobile()){
@@ -107,7 +106,6 @@ $('div#nav ul a').bind('click',function(event){
     scroll($anchor.attr('href'));
     activerize($anchor);
   }
-  // return false;
 });
 
 var tiles = [];
