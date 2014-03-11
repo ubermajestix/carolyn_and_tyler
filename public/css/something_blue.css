@@ -368,6 +368,12 @@ div.guide {
       left: 127px;
       border: 3px solid;
       border-color: #508395 transparent transparent transparent; }
+    div.guide div.ribbon.sold_out {
+      background: #D3393F; }
+      div.guide div.ribbon.sold_out:before {
+        border-color: #813C3E transparent transparent transparent; }
+      div.guide div.ribbon.sold_out:after {
+        border-color: #813C3E transparent transparent transparent; }
   div.guide span.glyphicon-phone-alt {
     margin-right: 10px; }
   div.guide ul {

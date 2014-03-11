@@ -387,6 +387,15 @@ div.guide{
       border: 3px solid;
       border-color: #508395 transparent transparent transparent;
     }
+    &.sold_out{
+      background: #D3393F;
+      &:before{
+        border-color: #813C3E transparent transparent transparent;
+      }
+      &:after{
+        border-color: #813C3E transparent transparent transparent;
+      }
+    }
 
   }
   span.glyphicon-phone-alt{
